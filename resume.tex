@@ -1,0 +1,120 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[francais]{layout}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.90]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{2.3cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\setlength{\hoffset}{0.7cm}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{14in}
+\setlength{\headsep}{25pt}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Michael} % Your first name
+\familyname{Arbel} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{25 Howland St, Fitzrovia}{London W1T 4JG
+ \--- United Kingdom}
+\mobile{+44 (0) 78 79 53 76 43}
+\email{michael.n.arbel@gmail.com}
+\homepage{Citizenship: French, Moroccan}{}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\cventry{09-2016 \\ Present}{Gatsby Computational Neuroscience Unit, PhD in Machine Learning}{}{}{UK}
+{Kernel methods for density estimation. Supervisor: Arthur Gretton} 
+\cventry{09-2014\\08-2015}{École Normale Supérieure de Cachan, MSc in Computer Science}{MVA}{}{France}
+{Graphical Models, Deep Neural Networks, Reinforcement Learning, Object Recognition.} % Arguments not required can be left empty
+\cventry{09-2011\\08-2014}{École Polytechnique, Ingénieur de l'Ecole Polytechnique}{Mathematics and Physics}{}
+{}{Statistical Learning \& Nonparametric Estimation, Operations Research, Stochastic Calculus}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Work experience}
+\cventry{10-2015\\09-2016}{Computer Vision Engineer}{Chronocam}{}{}{
+Developed algorithms for multi-target tracking for neuromorphic event-based cameras.}
+\cventry{04-2015\\09-2015}{Graduate Student Researcher}{Data Team DI}{ENS Paris}{}{Studied the dynamics of recurrent networks that capture long-range dependencies in simple grammars.}
+\cventry{04-2014\\06-2014}{Graduate Student Researcher}{ORFE}{Princeton University}{}{Proved an existence and uniqueness result for a class of mean field games with dependence on the control.}
+\cventry{07-2013\\09-2013}{IT Analyst Intern}{Eurofins}{Luxembourg}{}{Developed a new business process workflow in Eurofins' Document Management Software.}
+\section{Publications}
+
+\cvitem{}{Dougal J. Sutherland, Heiko Strathmann, Michael Arbel, Arthur Gretton. Efficient and principled score estimation. \textit{Neural Information Processing Systems (NIPS), 2017, In press} }
+
+
+\section{Competitions and Awards}
+\cvitem{2011--2015}{French Government Eiffel Excellence Scholarship}
+\cvitem{2014}{Award of Financial Risk Chair of École Polytechnique for the research internship}
+\cvitem{2013}{Award for "Outstanding Position Paper" at Model United Nation, New York.}
+\cvitem{2009}{Participation to International Mathematical Olympiads, Germany.}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.6\textwidth}
+\section{Computer Skills}
+\cvitem{Basic}{HTML, SQL}
+\cvitem{Intermediate}{ Java, R, Lua}
+\cvitem{Advanced}{Python, C++, Matlab, \LaTeX, Git}
+\end{minipage}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.5\textwidth}
+\section{Languages}
+\cvitemwithcomment{English}{Proficiency Level}{}
+\cvitemwithcomment{French}{Mother tongue}{}
+\cvitemwithcomment{Arabic}{Mother tongue}{}
+\end{minipage}
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
