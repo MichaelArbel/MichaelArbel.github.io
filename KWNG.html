@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.di.ens.fr/willow/research/unrel/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weakly-supervised learning of visual relations project page">
+    <meta name="author" content="WILLOW team">
+
+    <title>Kernelized Wasserstein Natural Gradient</title>
+
+    <link href="./Weakly-supervised learning of visual relations project page_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Weakly-supervised learning of visual relations project page_files/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+
+    <div class="container">
+      <center>
+      <div class="header">
+        <h3 class="text-muted">Kernelized Wasserstein Natural Gradient</h3>
+      </div>
+      </center>
+      <center>
+          <img src="./materials/gaussian_flow.jpg" title=" Optimization trajectories robust to parameterization " style="max-width:40%;">
+      </center>
+      <center>
+      <div>
+          <img src="./materials/relative_error_sphere.jpg" title=" Fast and accurate estimator of the Wasserstein Natural gradient " style="max-width:60%;">
+      </center>
+      <div class="row">
+        <h3>People</h3>
+        <ul>
+            <li><a href="https://michaelarbel.github.io/">Michael Arbel</a></li>
+            <li><a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a></li>
+            <li><a href="https://www.math.ucla.edu/~wcli/">Wuchen Li </a></li>
+	    <li><a href="https://personal-homepages.mis.mpg.de/montufar/">Guido Montufar </a></li> 
+            
+        </ul>
+      </div>
+      <div class="row">
+        <h3>Abstract</h3>
+        <p style="text-align: justify;">
+Many machine learning problems can be expressed as the optimization of some cost functional over a parametric family of probability distributions. It is often beneficial to solve such optimization problems using natural gradient methods. These methods are invariant to the parametrization of the family, and thus can yield more effective optimization. Unfortunately, computing the natural gradient is challenging as it requires inverting a high dimensional matrix at each iteration. We propose a general framework to approximate the natural gradient for the Wasserstein metric, by leveraging a dual formulation of the metric restricted to a Reproducing Kernel Hilbert Space. Our approach leads to an estimator for gradient direction that can trade-off accuracy and computational cost, with theoretical guarantees. We verify its accuracy on simple examples, and show the advantage of using such an estimator in classification tasks on Cifar10 and Cifar100 empirically.
+	</p>
+      </div>
+      <div class="row">
+        <h3>Paper</h3>
+        <p>
+        <a href="https://arxiv.org/abs/1910.09652" target="_blank">[arXiv]</a>  <a href="./materials/talk_turing.pdf" target="_blank">[Alain Turing talk]</a>
+        </p>
+        <h4>BibTeX</h4>
+        <pre><tt>@article{Arbel:2018,
+                                author  = {Michael Arbel, Arthur Gretton, Wuchen Li, Guido Montufar},
+                                title   = {Kernelized Wasserstein Natural Gradient},
+                                journal = {ICLR},
+                                year    = {2020},
+                                url     = {https://arxiv.org/abs/1910.09652},
+                                    }
+      </tt></pre>
+      </div>
+
+<div class="row">
+<h3>Code</h3>
+An implementation of the Kernelized Wasserstein Natural Gradient optimizer is available at:
+<p>
+<a href="https://github.com/MichaelArbel/KWNG" target="_blank">[GitHub]</a>
+</p>
+
+
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+
+</body></html>
