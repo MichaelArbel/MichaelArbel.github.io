@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-23T22:12:50+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>Here you can find out about my research interests.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-23T22:29:11+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>Here you can find out about my research interests.
 </subtitle><entry><title type="html">a post with diagrams</title><link href="http://localhost:4000/blog/2021/diagrams/" rel="alternate" type="text/html" title="a post with diagrams" /><published>2021-07-04T19:39:00+02:00</published><updated>2021-07-04T19:39:00+02:00</updated><id>http://localhost:4000/blog/2021/diagrams</id><content type="html" xml:base="http://localhost:4000/blog/2021/diagrams/">&lt;p&gt;This theme supports generating various diagrams from a text description using &lt;a href=&quot;https://github.com/zhustec/jekyll-diagrams&quot; target=&quot;\_blank&quot;&gt;jekyll-diagrams&lt;/a&gt; plugin.
 Below, we generate a few examples of such diagrams using languages such as &lt;a href=&quot;https://mermaid-js.github.io/mermaid/&quot; target=&quot;\_blank&quot;&gt;mermaid&lt;/a&gt;, &lt;a href=&quot;https://plantuml.com/&quot; target=&quot;\_blank&quot;&gt;plantuml&lt;/a&gt;, &lt;a href=&quot;https://vega.github.io/vega-lite/&quot; target=&quot;\_blank&quot;&gt;vega-lite&lt;/a&gt;, etc.&lt;/p&gt;
 
@@ -393,73 +393,7 @@ Produces something like this:&lt;/p&gt;
 
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="sample-posts" /><category term="formatting" /><category term="code" /><summary type="html">This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting. It supports more than 100 languages. This example is in C++. All you have to do is wrap your code in a liquid tag:</summary></entry><entry><title type="html">a post with images</title><link href="http://localhost:4000/blog/2015/images/" rel="alternate" type="text/html" title="a post with images" /><published>2015-05-15T23:01:00+02:00</published><updated>2015-05-15T23:01:00+02:00</updated><id>http://localhost:4000/blog/2015/images</id><content type="html" xml:base="http://localhost:4000/blog/2015/images/">&lt;p&gt;This is an example post with image galleries.&lt;/p&gt;
-
-&lt;div class=&quot;row mt-3&quot;&gt;
-    &lt;div class=&quot;col-sm mt-3 mt-md-0&quot;&gt;
-        
-
-
-&lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/resized/9-1400x933.jpg&quot; srcset=&quot;    /assets/resized/9-480x320.jpg 480w,    /assets/resized/9-800x533.jpg 800w,    /assets/resized/9-1400x933.jpg 1400w,/assets/img/9.jpg 3000w&quot; /&gt;
-
-    &lt;/div&gt;
-    &lt;div class=&quot;col-sm mt-3 mt-md-0&quot;&gt;
-        
-
-
-&lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/resized/7-1400x933.jpg&quot; srcset=&quot;    /assets/resized/7-480x320.jpg 480w,    /assets/resized/7-800x533.jpg 800w,    /assets/resized/7-1400x933.jpg 1400w,/assets/img/7.jpg 3000w&quot; /&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;caption&quot;&gt;
-    A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
-&lt;/div&gt;
-
-&lt;p&gt;Images can be made zoomable.
-Simply add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data-zoomable&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tags that you want to make zoomable.&lt;/p&gt;
-
-&lt;div class=&quot;row mt-3&quot;&gt;
-    &lt;div class=&quot;col-sm mt-3 mt-md-0&quot;&gt;
-        
-
-
-&lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/resized/8-1400x973.jpg&quot; srcset=&quot;    /assets/resized/8-480x334.jpg 480w,    /assets/resized/8-800x556.jpg 800w,    /assets/resized/8-1400x973.jpg 1400w,/assets/img/8.jpg 3000w&quot; data-zoomable=&quot;&quot; /&gt;
-
-    &lt;/div&gt;
-    &lt;div class=&quot;col-sm mt-3 mt-md-0&quot;&gt;
-        
-
-
-&lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/resized/10-1400x933.jpg&quot; srcset=&quot;    /assets/resized/10-480x320.jpg 480w,    /assets/resized/10-800x533.jpg 800w,    /assets/resized/10-1400x933.jpg 1400w,/assets/img/10.jpg 3000w&quot; data-zoomable=&quot;&quot; /&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The rest of the images in this post are all zoomable, arranged into different mini-galleries.&lt;/p&gt;
-
-&lt;div class=&quot;row mt-3&quot;&gt;
-    &lt;div class=&quot;col-sm mt-3 mt-md-0&quot;&gt;
-        
-
-
-&lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/resized/11-1400x1956.jpg&quot; srcset=&quot;    /assets/resized/11-480x671.jpg 480w,    /assets/resized/11-800x1118.jpg 800w,    /assets/resized/11-1400x1956.jpg 1400w,/assets/img/11.jpg 2000w&quot; data-zoomable=&quot;&quot; /&gt;
-
-    &lt;/div&gt;
-    &lt;div class=&quot;col-sm mt-3 mt-md-0&quot;&gt;
-        
-
-
-&lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/resized/12-1400x933.jpg&quot; srcset=&quot;    /assets/resized/12-480x320.jpg 480w,    /assets/resized/12-800x533.jpg 800w,    /assets/resized/12-1400x933.jpg 1400w,/assets/img/12.jpg 2000w&quot; data-zoomable=&quot;&quot; /&gt;
-
-    &lt;/div&gt;
-    &lt;div class=&quot;col-sm mt-3 mt-md-0&quot;&gt;
-        
-
-
-&lt;img class=&quot;img-fluid rounded z-depth-1&quot; src=&quot;/assets/resized/7-1400x933.jpg&quot; srcset=&quot;    /assets/resized/7-480x320.jpg 480w,    /assets/resized/7-800x533.jpg 800w,    /assets/resized/7-1400x933.jpg 1400w,/assets/img/7.jpg 3000w&quot; data-zoomable=&quot;&quot; /&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="sample-posts" /><category term="formatting" /><category term="images" /><summary type="html">This is an example post with image galleries.</summary></entry><entry><title type="html">a post with formatting and links</title><link href="http://localhost:4000/blog/2015/formatting-and-links/" rel="alternate" type="text/html" title="a post with formatting and links" /><published>2015-03-15T17:40:16+01:00</published><updated>2015-03-15T17:40:16+01:00</updated><id>http://localhost:4000/blog/2015/formatting-and-links</id><content type="html" xml:base="http://localhost:4000/blog/2015/formatting-and-links/">&lt;p&gt;Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. &lt;a href=&quot;https://www.pinterest.com&quot;&gt;Pinterest&lt;/a&gt; DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade &lt;a href=&quot;https://en.wikipedia.org/wiki/Cold-pressed_juice&quot;&gt;cold-pressed&lt;/a&gt; meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.&lt;/p&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="sample-posts" /><category term="formatting" /><category term="code" /><summary type="html">This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting. It supports more than 100 languages. This example is in C++. All you have to do is wrap your code in a liquid tag:</summary></entry><entry><title type="html">a post with formatting and links</title><link href="http://localhost:4000/blog/2015/formatting-and-links/" rel="alternate" type="text/html" title="a post with formatting and links" /><published>2015-03-15T17:40:16+01:00</published><updated>2015-03-15T17:40:16+01:00</updated><id>http://localhost:4000/blog/2015/formatting-and-links</id><content type="html" xml:base="http://localhost:4000/blog/2015/formatting-and-links/">&lt;p&gt;Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. &lt;a href=&quot;https://www.pinterest.com&quot;&gt;Pinterest&lt;/a&gt; DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade &lt;a href=&quot;https://en.wikipedia.org/wiki/Cold-pressed_juice&quot;&gt;cold-pressed&lt;/a&gt; meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.&lt;/p&gt;
 
 &lt;h4 id=&quot;hipster-list&quot;&gt;Hipster list&lt;/h4&gt;
 &lt;ul&gt;
