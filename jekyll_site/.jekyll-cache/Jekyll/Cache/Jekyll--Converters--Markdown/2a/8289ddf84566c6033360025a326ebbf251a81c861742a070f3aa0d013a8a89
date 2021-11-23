@@ -1,0 +1,588 @@
+I"K5<div class="publications">
+
+
+  <h2 class="bibliography">Generative Modeling</h2>
+<ol class="bibliography"><li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/mbinkowski/MMD-GAN">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="/assets/resized/MMD-GAN-800x800.png" srcset="    /assets/resized/MMD-GAN-480x480.png 480w,    /assets/resized/MMD-GAN-800x800.png 800w,/assets/thumbnails/MMD-GAN.png 836w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Binkowski:2018" class="col-sm-8">
+  
+    
+      <div class="title">Demystifying MMD GANs</div>
+      <div class="description">A Maximum Mean Discrepancy loss for Generative Adversarial Networks. ICLR       
+        2018
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/mbinkowski/MMD-GAN" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/1801.01401" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li>
+<li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/MichaelArbel/Scaled-MMD-GAN">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="/assets/resized/SMMD-800x800.png" srcset="    /assets/resized/SMMD-480x480.png 480w,    /assets/resized/SMMD-800x800.png 800w,/assets/thumbnails/SMMD.png 952w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Arbel:2018a" class="col-sm-8">
+  
+    
+      <div class="title">On gradient regularizers for MMD-GANs</div>
+      <div class="description">A gradient penalty method  for regularizing MMD-GANs with state-of-the-art performance. NeurIPS       
+        2018
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/MichaelArbel/Scaled-MMD-GAN" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/1805.11565" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li>
+<li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/MichaelArbel/GeneralizedEBM">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="/assets/resized/GEBM-1400x1400.png" srcset="    /assets/resized/GEBM-480x480.png 480w,    /assets/resized/GEBM-800x800.png 800w,    /assets/resized/GEBM-1400x1400.png 1400w,/assets/thumbnails/GEBM.png 3020w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Arbel2021" class="col-sm-8">
+  
+    
+      <div class="title">Generalized energy based models</div>
+      <div class="description">A model combining implicit and explit modeling for learning distributions with small intrinsic dimension. ICLR       
+        2021
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/MichaelArbel/GeneralizedEBM" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/2111.02994" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li></ol>
+<h2 class="bibliography">High Dimensioncal Sampling</h2>
+<ol class="bibliography"><li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/deepmind/annealed_flow_transport">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="" srcset="/assets/thumbnails/AFT.png 443w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Arbel2021a" class="col-sm-8">
+  
+    
+      <div class="title">Annealed Flow Transport Monte Carlo</div>
+      <div class="description">A sampling algorithm combining Sequential Monte Carlo and Normalizing Flows. ICML       
+        2021
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/deepmind/annealed_flow_transport" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/2102.07501" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li></ol>
+<h2 class="bibliography">Kernel Methods</h2>
+<ol class="bibliography"><li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/MichaelArbel/KCEF">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="" srcset="/assets/thumbnails/KCEF.png 404w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Arbel:2018" class="col-sm-8">
+  
+    
+      <div class="title">Kernel Conditional Exponential Family</div>
+      <div class="description">An algorithm for conditional density estimation using Kernel Exponential Families. AISTATS       
+        2018
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/MichaelArbel/KCEF" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/1711.05363" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li>
+<li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/karlnapf/nystrom-kexpfam">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="/assets/resized/KExpFam-800x780.png" srcset="    /assets/resized/KExpFam-480x468.png 480w,    /assets/resized/KExpFam-800x780.png 800w,/assets/thumbnails/KExpFam.png 859w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Sutherland:2018" class="col-sm-8">
+  
+    
+      <div class="title">Efficient and principled score estimation with Nystrom kernel exponential families</div>
+      <div class="description">An efficient algorithm for density estimation. AISTATS       
+        2018
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/karlnapf/nystrom-kexpfam" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/1705.08360" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li>
+<li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/louity/patches">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="/assets/resized/Patches-1400x1400.png" srcset="    /assets/resized/Patches-480x480.png 480w,    /assets/resized/Patches-800x800.png 800w,    /assets/resized/Patches-1400x1400.png 1400w,/assets/thumbnails/Patches.png 6040w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Thiry2021" class="col-sm-8">
+  
+    
+      <div class="title">Patches in Deep Convolutional Kernels Methods</div>
+      <div class="description">Code to reproduce the experiments of the paper. ICLR       
+        2021
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/louity/patches" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/2101.07528" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li></ol>
+<h2 class="bibliography">Optimization</h2>
+<ol class="bibliography"><li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/MichaelArbel/MMD-gradient-flow">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="/assets/resized/MMD-flow-480x480.png" srcset="    /assets/resized/MMD-flow-480x480.png 480w,/assets/thumbnails/MMD-flow.png 594w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Arbel:2019" class="col-sm-8">
+  
+    
+      <div class="title">Maximum Mean Discrepancy Gradient Flow</div>
+      <div class="description">An algorithm based on Noise Injection to optimize the  corresponding paper.         NeurIPS       
+        2019
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/MichaelArbel/MMD-gradient-flow" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/1906.04370" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li>
+<li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/MichaelArbel/KWNG">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="/assets/resized/KWNG-800x800.png" srcset="    /assets/resized/KWNG-480x480.png 480w,    /assets/resized/KWNG-800x800.png 800w,/assets/thumbnails/KWNG.png 931w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Arbel:2020" class="col-sm-8">
+  
+    
+      <div class="title">Kernelized Wasserstein Natural Gradient</div>
+      <div class="description">An efficient and scalable algorithm for estimating the Wasserstein natural gradient. ICLR       
+        2020
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/MichaelArbel/KWNG" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/1910.09652" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li>
+<li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/MichaelArbel/OT-sync">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="/assets/resized/OT_sync-480x480.png" srcset="    /assets/resized/OT_sync-480x480.png 480w,/assets/thumbnails/OT_sync.png 563w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Tolga:2020" class="col-sm-8">
+  
+    
+      <div class="title">Synchronizing Probability Measures on Rotations via Optimal Transport</div>
+      <div class="description">A simple algorithm based on optimal transport for synchronizing rotations. CVPR       
+        2020
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/MichaelArbel/OT-sync" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/2004.00663" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li></ol>
+<h2 class="bibliography">Reinforcement Learning</h2>
+<ol class="bibliography"><li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/tedmoskovitz/WNPG">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="/assets/resized/WNG_RL-480x480.png" srcset="    /assets/resized/WNG_RL-480x480.png 480w,/assets/thumbnails/WNG_RL.png 779w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Moskovitz2021" class="col-sm-8">
+  
+    
+      <div class="title">Efficient wasserstein natural gradients for reinforcement learning</div>
+      <div class="description">An efficient algorithm to incorporate behavioral geometry for policy gradient in RL. ICLR       
+        2021
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/tedmoskovitz/WNPG" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/2010.05380" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li>
+<li><div class="row">
+
+  <div class="col-sm-2 abbr">
+  
+  
+  <div class="grid-item">
+    <a href="https://github.com/tedmoskovitz/TOP">
+      <div class="card hoverable">
+        
+          
+
+
+<img src="/assets/resized/top-1400x1400.png" srcset="    /assets/resized/top-480x480.png 480w,    /assets/resized/top-800x800.png 800w,    /assets/resized/top-1400x1400.png 1400w,/assets/thumbnails/top.png 2758w" alt="entry.code_abbr" />
+
+        
+      </div>
+    </a>
+    </div>
+
+  
+  
+  </div>
+
+  <div id="Moskovitz2021a" class="col-sm-8">
+  
+    
+      <div class="title">Tactical Optimism and Pessimism for Deep Reinforcement Learning</div>
+      <div class="description">A simple algorithm for dynamically trading-off between optimism and pessimism in RL. NeurIPS       
+        2021
+      </div>
+    <div class="links">
+    
+      <a href="https://github.com/tedmoskovitz/TOP" class="btn btn-sm z-depth-0" role="button">Code</a>
+    
+    
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    
+    
+      <a href="http://arxiv.org/abs/2102.03765" class="btn btn-sm z-depth-0" role="button">ArXiv</a>
+    
+    
+    </div>
+    
+    
+  </div>
+
+</div>
+</li></ol>
+
+
+</div>
+:ET
