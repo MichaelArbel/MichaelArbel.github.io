@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="post">
+
+  <header class="post-header">
+
+  </header>
+
+  <article>
+    <div class="clearfix">
+      {{ content }}
+    </div>
+
+    {% if page.news %}
+      {% include all_news.html %}
+    {% endif %}
+
+
+    {% if page.social %}
+    <div class="social">
+      <div class="contact-icons">
+        {% include social.html %}
+      </div>
+      <div class="contact-note">{{ site.contact_note }}</div>
+    </div>
+    {% endif %}
+  </article>
+
+</div>
