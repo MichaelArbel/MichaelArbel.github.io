@@ -45,35 +45,6 @@
 <!-- Dark Mode -->
 <script src="/assets/js/theme.js"></script>
 <script src="/assets/js/dark_mode.js"></script>
-<script>
-    MathJax = {
-        tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']],
-            processEscapes: true,
-            tags: "all"
-        },
-        svg: {
-            fontCache: 'global'
-        },
-        loader: {
-            load: ['[tex]/html']
-        }
-    };
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js" integrity="sha512-EtUjpk/hY3NXp8vfrPUJWhepp1ZbgSI10DKPzfd+3J/p2Wo89JRBvQIdk3Q83qAEhKOiFOsYfhqFnOEv23L+dA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script type="text/javascript">
-    const hal_integrator_config = {
-       // idHal personnalisé
-       "id": "michael-arbel",
-       // Liste des types de publications souhaités
-       "typeList": ["PROCEEDINGS","ART","COMM", "UNDEFINED",  "THESE"],
-       // (Optionnel: activation manuelle)
-       "doit": false,
-       // (Optionnel: mode de débogage)
-       "debug": false,
-     }
-</script>
 
 
 
@@ -209,7 +180,8 @@
 
   <article>
     <div class="publications">
-      <div id="hal-bibliography-integrator"></div>
+    
+          <IFRAME id="idIframe" width="100%" height=600  src="https://haltools.inria.fr/Public/afficheRequetePubli.php?auteur_exp=Michael%2CArbel&CB_auteur=oui&CB_titre=oui&CB_article=oui&langue=Anglais&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&ordre_aff=TA&Fen=Aff&css=../css/VisuRubriqueEncadre.css" FRAMEBORDER="0" scrolling="auto" ></IFRAME>
 
     </div>
 
@@ -232,7 +204,6 @@
 </footer>
 
 
-<script type="text/javascript" src="/assets/js/hal.js"></script>
   </body>
 
   <!-- jQuery -->
