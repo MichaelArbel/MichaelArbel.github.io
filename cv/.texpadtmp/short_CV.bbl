@@ -1,0 +1,751 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global}
+    \entry{marrie:hal-04847170}{article}{}
+      \name{author}{4}{ul=3}{%
+        {{hash=94cd624a9a7d500c211812278ab632ff}{%
+           family={Marrie},
+           familyi={M\bibinitperiod},
+           given={Juliette},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d699b6cdc55cf5811dd19c9a2e13c7c1}{%
+           family={Mairal},
+           familyi={M\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a3df968b840ba01bd10cb0a23602fde1}{%
+           family={Larlus},
+           familyi={L\bibinitperiod},
+           given={Diane},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[Amherst Massachusetts]: OpenReview.net, 2022}%
+      }
+      \strng{namehash}{007a393e3eedd67d0c69030a264eeb70}
+      \strng{fullhash}{e0f3a46b5818a4596e643f68a7d1514f}
+      \strng{bibnamehash}{e0f3a46b5818a4596e643f68a7d1514f}
+      \strng{authorbibnamehash}{e0f3a46b5818a4596e643f68a7d1514f}
+      \strng{authornamehash}{007a393e3eedd67d0c69030a264eeb70}
+      \strng{authorfullhash}{e0f3a46b5818a4596e643f68a7d1514f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Transactions on Machine Learning Research Journal}}
+      \field{month}{5}
+      \field{title}{{On Good Practices for Task-Specific Distillation of Large Pretrained Visual Models}}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{file}
+      \verb https://inria.hal.science/hal-04847170v1/file/2242_On_Good_Practices_for_Tas.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://inria.hal.science/hal-04847170
+      \endverb
+      \verb{url}
+      \verb https://inria.hal.science/hal-04847170
+      \endverb
+    \endentry
+    \entry{marrie:hal-04847194}{unpublished}{}
+      \name{author}{5}{ul=2}{%
+        {{hash=94cd624a9a7d500c211812278ab632ff}{%
+           family={Marrie},
+           familyi={M\bibinitperiod},
+           given={Juliette},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4da9acaf8b87095a9021e3c1764be9c7}{%
+           family={Ménégaux},
+           familyi={M\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a3df968b840ba01bd10cb0a23602fde1}{%
+           family={Larlus},
+           familyi={L\bibinitperiod},
+           given={Diane},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d699b6cdc55cf5811dd19c9a2e13c7c1}{%
+           family={Mairal},
+           familyi={M\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{50421b8f2d0a5a5f7e0c31e7671f1409}
+      \strng{fullhash}{96b2be3022a6310eae9c0227c774bfce}
+      \strng{bibnamehash}{96b2be3022a6310eae9c0227c774bfce}
+      \strng{authorbibnamehash}{96b2be3022a6310eae9c0227c774bfce}
+      \strng{authornamehash}{50421b8f2d0a5a5f7e0c31e7671f1409}
+      \strng{authorfullhash}{96b2be3022a6310eae9c0227c774bfce}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{working paper or preprint}
+      \field{title}{{LUDVIG: Learning-free uplifting of 2d visual features to Gaussian splatting scenes}}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{file}
+      \verb https://inria.hal.science/hal-04847194v1/file/2410.14462v3.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://inria.hal.science/hal-04847194
+      \endverb
+      \verb{url}
+      \verb https://inria.hal.science/hal-04847194
+      \endverb
+    \endentry
+    \entry{petrulionyte:hal-04847182}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=d031d6ee38f154b337772750d90a8a37}{%
+           family={Petrulionyte},
+           familyi={P\bibinitperiod},
+           given={Ieva},
+           giveni={I\bibinitperiod}}}%
+        {{hash=d699b6cdc55cf5811dd19c9a2e13c7c1}{%
+           family={Mairal},
+           familyi={M\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vancouver, Canada}%
+      }
+      \strng{namehash}{bd5c314572b085c109d5f58cbbf3490d}
+      \strng{fullhash}{31468a2f0d2ede0211ac3cbf5c047aa4}
+      \strng{bibnamehash}{31468a2f0d2ede0211ac3cbf5c047aa4}
+      \strng{authorbibnamehash}{31468a2f0d2ede0211ac3cbf5c047aa4}
+      \strng{authornamehash}{bd5c314572b085c109d5f58cbbf3490d}
+      \strng{authorfullhash}{31468a2f0d2ede0211ac3cbf5c047aa4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{NeurIPS 2024 - Thirty-Eighth Annual Conference on Neural Information Processing Systems}}
+      \field{month}{12}
+      \field{title}{{Functional Bilevel Optimization for Machine Learning}}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 50}
+      \range{pages}{50}
+      \verb{file}
+      \verb https://inria.hal.science/hal-04847182v1/file/2403.20233v4.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://inria.hal.science/hal-04847182
+      \endverb
+      \verb{url}
+      \verb https://inria.hal.science/hal-04847182
+      \endverb
+    \endentry
+    \entry{arbel:hal-04362139}{inproceedings}{}
+      \name{author}{3}{ul=2}{%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4da9acaf8b87095a9021e3c1764be9c7}{%
+           family={Ménégaux},
+           familyi={M\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=784ddc88502c23b2932189a58afdbf71}{%
+           family={Wolinski},
+           familyi={W\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {La Nouvelle-Orléans, United States}%
+      }
+      \strng{namehash}{a5485d2f2298159c4993705197fef688}
+      \strng{fullhash}{20db35e899a7f61705673ce443f05f69}
+      \strng{bibnamehash}{20db35e899a7f61705673ce443f05f69}
+      \strng{authorbibnamehash}{20db35e899a7f61705673ce443f05f69}
+      \strng{authornamehash}{a5485d2f2298159c4993705197fef688}
+      \strng{authorfullhash}{20db35e899a7f61705673ce443f05f69}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{NeurIPS 2023 - Thirty-seventh Conference on Neural Information Processing Systems}}
+      \field{month}{12}
+      \field{title}{{Rethinking Gauss-Newton for learning over-parameterized models}}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{file}
+      \verb https://hal.science/hal-04362139v1/file/Arbel%20-%202302.02904.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-04362139
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-04362139
+      \endverb
+      \keyw{Gauss Newton method ; Neural netwoks ; Optimization}
+    \endentry
+    \entry{marrie:hal-04135386}{inproceedings}{}
+      \name{author}{4}{ul=3}{%
+        {{hash=94cd624a9a7d500c211812278ab632ff}{%
+           family={Marrie},
+           familyi={M\bibinitperiod},
+           given={Juliette},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a3df968b840ba01bd10cb0a23602fde1}{%
+           family={Larlus},
+           familyi={L\bibinitperiod},
+           given={Diane},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d699b6cdc55cf5811dd19c9a2e13c7c1}{%
+           family={Mairal},
+           familyi={M\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vancouver, Canada}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ee381bdf9dc37c0bac432c7276c210d8}
+      \strng{fullhash}{4f243225922ce550d83131c2d1c16dd8}
+      \strng{bibnamehash}{4f243225922ce550d83131c2d1c16dd8}
+      \strng{authorbibnamehash}{4f243225922ce550d83131c2d1c16dd8}
+      \strng{authornamehash}{ee381bdf9dc37c0bac432c7276c210d8}
+      \strng{authorfullhash}{4f243225922ce550d83131c2d1c16dd8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{CVPR 2023 - IEEE/CVF Conference onComputer Vision and Pattern Recognition}}
+      \field{month}{6}
+      \field{title}{{SLACK: Stable Learning of Augmentations with Cold-start and KL regularization}}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1109/cvpr52729.2023.02328
+      \endverb
+      \verb{file}
+      \verb https://inria.hal.science/hal-04135386v1/file/SLACK_cvpr23.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://inria.hal.science/hal-04135386
+      \endverb
+      \verb{url}
+      \verb https://inria.hal.science/hal-04135386
+      \endverb
+      \keyw{computer vision ; image recognition ; automatic data augmentation}
+    \endentry
+    \entry{arbel:hal-03455458}{inproceedings}{}
+      \name{author}{2}{ul=2}{%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d699b6cdc55cf5811dd19c9a2e13c7c1}{%
+           family={Mairal},
+           familyi={M\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Online, France}%
+      }
+      \strng{namehash}{f64381c70fd469b68893d4bb38ba4a29}
+      \strng{fullhash}{f64381c70fd469b68893d4bb38ba4a29}
+      \strng{bibnamehash}{f64381c70fd469b68893d4bb38ba4a29}
+      \strng{authorbibnamehash}{f64381c70fd469b68893d4bb38ba4a29}
+      \strng{authornamehash}{f64381c70fd469b68893d4bb38ba4a29}
+      \strng{authorfullhash}{f64381c70fd469b68893d4bb38ba4a29}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{The Tenth International Conference on Learning Representations}}
+      \field{month}{4}
+      \field{title}{{Amortized implicit differentiation for stochastic bilevel optimization}}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{file}
+      \verb https://hal.science/hal-03455458v1/file/main.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-03455458
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-03455458
+      \endverb
+    \endentry
+    \entry{arbel:hal-03869097}{inproceedings}{}
+      \name{author}{2}{ul=2}{%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d699b6cdc55cf5811dd19c9a2e13c7c1}{%
+           family={Mairal},
+           familyi={M\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New Orleans, United States}%
+      }
+      \strng{namehash}{f64381c70fd469b68893d4bb38ba4a29}
+      \strng{fullhash}{f64381c70fd469b68893d4bb38ba4a29}
+      \strng{bibnamehash}{f64381c70fd469b68893d4bb38ba4a29}
+      \strng{authorbibnamehash}{f64381c70fd469b68893d4bb38ba4a29}
+      \strng{authornamehash}{f64381c70fd469b68893d4bb38ba4a29}
+      \strng{authorfullhash}{f64381c70fd469b68893d4bb38ba4a29}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{NeurIPS 2022 - 36th Conference on Neural Information Processing Systems}}
+      \field{month}{11}
+      \field{series}{Advances in Neural Information Processing Systems (NeurIPS) 2022}
+      \field{title}{{Non-Convex Bilevel Games with Critical Point Selection Maps}}
+      \field{year}{2022}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 34}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.48550/arXiv.2207.04888
+      \endverb
+      \verb{file}
+      \verb https://hal.science/hal-03869097v1/file/2207.04888.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-03869097
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-03869097
+      \endverb
+    \endentry
+    \entry{glaser:hal-03869080}{unpublished}{}
+      \name{author}{4}{ul=3}{%
+        {{hash=79519e370df737cd5527c92eb65b2778}{%
+           family={Glaser},
+           familyi={G\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=aca5faad8b57b96b59c12fc59d0b6eb4}{%
+           family={Doucet},
+           familyi={D\bibinitperiod},
+           given={Arnaud},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1f42dc1a2d390bd84511cbccb6397013}{%
+           family={Gretton},
+           familyi={G\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c7b5f9d046a03f2cabc79804d18d02e}
+      \strng{fullhash}{5d337526fd22dba9bf0280d627633eea}
+      \strng{bibnamehash}{5d337526fd22dba9bf0280d627633eea}
+      \strng{authorbibnamehash}{5d337526fd22dba9bf0280d627633eea}
+      \strng{authornamehash}{5c7b5f9d046a03f2cabc79804d18d02e}
+      \strng{authorfullhash}{5d337526fd22dba9bf0280d627633eea}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{note}{working paper or preprint}
+      \field{title}{{Maximum Likelihood Learning of Energy-Based Models for Simulation-Based Inference}}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.48550/arXiv.2210.14756
+      \endverb
+      \verb{file}
+      \verb https://hal.science/hal-03869080v1/file/2210.14756.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-03869080
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-03869080
+      \endverb
+    \endentry
+    \entry{matthews:hal-03869105}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=1394361e807e91bcc487b787ba2028f3}{%
+           family={Matthews},
+           familyi={M\bibinitperiod},
+           given={Alexander\bibnamedelimb G\bibnamedelimb D\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a0de5b19c734d1fa5491ea6ab13715a7}{%
+           family={Rezende},
+           familyi={R\bibinitperiod},
+           given={Danilo\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=aca5faad8b57b96b59c12fc59d0b6eb4}{%
+           family={Doucet},
+           familyi={D\bibinitperiod},
+           given={Arnaud},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Baltimore, United States}%
+      }
+      \strng{namehash}{d9c2ef6850acb5214ee143b78ef2ca07}
+      \strng{fullhash}{d2598a3963dd7c1cd4b51fd269e67df1}
+      \strng{bibnamehash}{d2598a3963dd7c1cd4b51fd269e67df1}
+      \strng{authorbibnamehash}{d2598a3963dd7c1cd4b51fd269e67df1}
+      \strng{authornamehash}{d9c2ef6850acb5214ee143b78ef2ca07}
+      \strng{authorfullhash}{d2598a3963dd7c1cd4b51fd269e67df1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{International Conference on Machine Learning 2022}}
+      \field{title}{{Continual Repeated Annealed Flow Transport Monte Carlo}}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{file}
+      \verb https://hal.science/hal-03869105v1/file/matthews22a.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-03869105
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-03869105
+      \endverb
+    \endentry
+    \entry{moskovitz:hal-03455465}{inproceedings}{}
+      \name{author}{4}{ul=2}{%
+        {{hash=d6acb250d36a0b7b0d3abef3ea95eb29}{%
+           family={Moskovitz},
+           familyi={M\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b84fe489dbc160ae696acf6c7ca579fc}{%
+           family={Parker-Holder},
+           familyi={P\bibinithyphendelim H\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+        {{hash=47b9c81ab07b9cbf51396d137e22c693}{%
+           family={Pacchiano},
+           familyi={P\bibinitperiod},
+           given={Aldo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Online, France}%
+      }
+      \strng{namehash}{2158032eb4d17f025591ae5948c0b044}
+      \strng{fullhash}{ec2780b8d86e740bc1c1e4396f71b5ba}
+      \strng{bibnamehash}{ec2780b8d86e740bc1c1e4396f71b5ba}
+      \strng{authorbibnamehash}{ec2780b8d86e740bc1c1e4396f71b5ba}
+      \strng{authornamehash}{2158032eb4d17f025591ae5948c0b044}
+      \strng{authorfullhash}{ec2780b8d86e740bc1c1e4396f71b5ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{25th International Conference on Artificial Intelligence and Statistics}}
+      \field{month}{3}
+      \field{series}{Volume 130: International Conference on Artificial Intelligence and Statistics}
+      \field{title}{{Towards an Understanding of Default Policies in Multitask Policy Optimization}}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{file}
+      \verb https://hal.science/hal-03455465v1/file/2111.02994.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-03455465
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-03455465
+      \endverb
+    \endentry
+    \entry{arbel:hal-03455478}{inproceedings}{}
+      \name{author}{3}{ul=2}{%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1394361e807e91bcc487b787ba2028f3}{%
+           family={Matthews},
+           familyi={M\bibinitperiod},
+           given={Alexander\bibnamedelimb G\bibnamedelimb D\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=aca5faad8b57b96b59c12fc59d0b6eb4}{%
+           family={Doucet},
+           familyi={D\bibinitperiod},
+           given={Arnaud},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Online, France}%
+      }
+      \strng{namehash}{3d61dfd1272724e96d130c07ebcb4113}
+      \strng{fullhash}{e68bb653ebda405cc4c9b1ec456120c6}
+      \strng{bibnamehash}{e68bb653ebda405cc4c9b1ec456120c6}
+      \strng{authorbibnamehash}{e68bb653ebda405cc4c9b1ec456120c6}
+      \strng{authornamehash}{3d61dfd1272724e96d130c07ebcb4113}
+      \strng{authorfullhash}{e68bb653ebda405cc4c9b1ec456120c6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{ICML 2021 - 38th International Conference on Machine Learning}}
+      \field{month}{7}
+      \field{series}{Proceedings of the 30th International Conference on International Conference on Machine Learning}
+      \field{title}{{Annealed Flow Transport Monte Carlo}}
+      \field{volume}{28}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 70}
+      \range{pages}{70}
+      \verb{doi}
+      \verb 10.48550/arXiv.2102.07501
+      \endverb
+      \verb{file}
+      \verb https://hal.science/hal-03455478v1/file/2102.07501%20%282%29.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-03455478
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-03455478
+      \endverb
+    \endentry
+    \entry{glaser:hal-03455473}{inproceedings}{}
+      \name{author}{3}{ul=3}{%
+        {{hash=79519e370df737cd5527c92eb65b2778}{%
+           family={Glaser},
+           familyi={G\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1f42dc1a2d390bd84511cbccb6397013}{%
+           family={Gretton},
+           familyi={G\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Online, France}%
+      }
+      \strng{namehash}{cabafdb4c91452cdec7692a616f014e1}
+      \strng{fullhash}{cabafdb4c91452cdec7692a616f014e1}
+      \strng{bibnamehash}{cabafdb4c91452cdec7692a616f014e1}
+      \strng{authorbibnamehash}{cabafdb4c91452cdec7692a616f014e1}
+      \strng{authornamehash}{cabafdb4c91452cdec7692a616f014e1}
+      \strng{authorfullhash}{cabafdb4c91452cdec7692a616f014e1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{NeurIPS 2021 -Thirty-Fifth Annual Conference on Neural Information Processing Systems}}
+      \field{month}{12}
+      \field{series}{Advances in Neural Information Processing Systems}
+      \field{title}{{KALE Flow: A Relaxed KL Gradient Flow for Probabilities with Disjoint Support}}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 29}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.48550/arXiv.2106.08929
+      \endverb
+      \verb{file}
+      \verb https://hal.science/hal-03455473v1/file/2106.08929.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-03455473
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-03455473
+      \endverb
+    \endentry
+    \entry{moskovitz:hal-03455481}{inproceedings}{}
+      \name{author}{5}{ul=2}{%
+        {{hash=d6acb250d36a0b7b0d3abef3ea95eb29}{%
+           family={Moskovitz},
+           familyi={M\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b84fe489dbc160ae696acf6c7ca579fc}{%
+           family={Parker-Holder},
+           familyi={P\bibinithyphendelim H\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+        {{hash=47b9c81ab07b9cbf51396d137e22c693}{%
+           family={Pacchiano},
+           familyi={P\bibinitperiod},
+           given={Aldo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8a36116840c7ee55901618c95fd08a58}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima I},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Online, France}%
+      }
+      \strng{namehash}{ec9e7a2bfd883bce1ada0685645d806a}
+      \strng{fullhash}{5fc1aa330c3226a8602fb48321205d51}
+      \strng{bibnamehash}{5fc1aa330c3226a8602fb48321205d51}
+      \strng{authorbibnamehash}{5fc1aa330c3226a8602fb48321205d51}
+      \strng{authornamehash}{ec9e7a2bfd883bce1ada0685645d806a}
+      \strng{authorfullhash}{5fc1aa330c3226a8602fb48321205d51}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{NeurIPS 2021 - Thirty-fifth Annual Conference on Neural Information Processing Systems}}
+      \field{month}{12}
+      \field{series}{Advances in Neural Information Processing Systems}
+      \field{title}{{Tactical Optimism and Pessimism for Deep Reinforcement Learning}}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.5555/3540261.3541245
+      \endverb
+      \verb{file}
+      \verb https://hal.science/hal-03455481v1/file/NeurIPS-2021-tactical-optimism-and-pessimism-for-deep-reinforcement-learning-Paper.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-03455481
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-03455481
+      \endverb
+    \endentry
+    \entry{thiry:hal-03114389}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=bd66408855b95cf89e9ca0cf5840e653}{%
+           family={Thiry},
+           familyi={T\bibinitperiod},
+           given={Louis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=482935b14917469a7e5f0bb7af05fdd7}{%
+           family={Belilovsky},
+           familyi={B\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b3a56e54ad6b57a9b6e2d9cd76c329ab}{%
+           family={Oyallon},
+           familyi={O\bibinitperiod},
+           given={Edouard},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna (online), Austria}%
+      }
+      \strng{namehash}{72044699608c2a2b496bf024b3a84ecf}
+      \strng{fullhash}{bcb4c21f84872471824cc4a281b3645b}
+      \strng{bibnamehash}{bcb4c21f84872471824cc4a281b3645b}
+      \strng{authorbibnamehash}{bcb4c21f84872471824cc4a281b3645b}
+      \strng{authornamehash}{72044699608c2a2b496bf024b3a84ecf}
+      \strng{authorfullhash}{bcb4c21f84872471824cc4a281b3645b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{International Conference on Learning Representation (ICLR 2021)}}
+      \field{title}{{The Unreasonable Effectiveness of Patches in Deep Convolutional Kernels Methods}}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{file}
+      \verb https://hal.science/hal-03114389v1/file/iclr2021_conference.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-03114389
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-03114389
+      \endverb
+      \keyw{convolutional kernel methods ; image classification}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

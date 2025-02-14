@@ -1,0 +1,359 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://  creativecommons.org/licenses/by-nc-sa/3.0/) 
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[francais]{layout}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.90]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{2.3cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\setlength{\hoffset}{0.7cm}
+\setlength{\textwidth}{6in}
+\setlength{\textheight}{10in}
+\setlength{\headsep}{25pt}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Michael} % Your first name
+\familyname{Arbel} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae }
+\address{Centre Inria Grenoble - Rhône-Alpes\\655 Avenue de l'Europe\\}{38330 Montbonnot-Saint-Martin
+ \--- France}
+\mobile{+33 (0) 6 64 91 16 18}
+\email{michael.n.arbel@gmail.com}
+\homepage{https://michaelarbel.github.io}{}
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% BLACK MAGIC %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage[colorlinks=true,urlcolor=black!50!blue,linkcolor=black,citecolor=black!30!red]{hyperref}
+
+% bibliographie 
+\usepackage[defernumbers=true,style=numeric,maxbibnames=9,maxcitenames=1,uniquelist=false,backend=biber,giveninits=true,sorting=none]{biblatex} 
+\addbibresource{biblio.bib}
+%\addbibresource{biblioapp.bib}
+%\addbibresource{bibliows.bib}
+
+%\addbibresource{/Users/MichaelArbel/Documents/Papers/bibliography.bib}
+%\usepackage{hyperref}
+% Pour trier mes papiers des autres
+% \DeclareSourcemap{
+%   \maps[datatype=bibtex]{
+%     \map{
+%       \step[fieldsource=author,
+%             match=Rudi,
+%             final]
+%       \step[fieldset=keywords, fieldvalue=mine]
+%     }
+%   }   
+% } 
+    
+%Append keywords to identify different bibliography entries.
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \perdatasource{biblio.bib}
+      %\step[fieldset=keywords, fieldvalue=,append]
+      %\step[fieldsource=keywords,notmatch=important,final]
+      \step[fieldset=keywords, fieldvalue=mine]
+    }
+%    \map{
+%      \perdatasource{bibliows.bib}
+%      \step[fieldset=keywords, fieldvalue=,append]
+%      \step[fieldsource=keywords,notmatch=important,final]
+%      \step[fieldset=keywords, fieldvalue=minews]
+%    }
+    \map{
+      \perdatasource{biblio.bib}
+      %\step[fieldset=keywords, fieldvalue=,append]
+      %\step[fieldsource=keywords,notmatch=important,final]
+      \step[fieldset=keywords, fieldvalue=minesub]
+    }  
+%    \map{
+%      \perdatasource{biblionat.bib}
+%      \step[fieldset=keywords, fieldvalue=,append]
+%      \step[fieldsource=keywords,notmatch=important,final]
+%      \step[fieldset=keywords, fieldvalue=minenat]
+%    } 
+    \map{ 
+      \perdatasource{biblio.bib}
+      \step[fieldset=keywords, fieldvalue=secondary]
+    }
+%    \map{   
+%      \perdatasource{/Users/MichaelArbel/Documents/Papers/bibliography.bib}
+%      \step[fieldset=keywords, fieldvalue=secondary]
+%    }
+    \map{ 
+      \perdatasource{biblio.bib}
+      \step[fieldset=keywords, fieldvalue=bibcode]
+    }
+    \map{ 
+      \perdatasource{biblio.bib}
+      \step[fieldset=keywords, fieldvalue=bibcode_ext]
+    }
+  }
+}
+
+\makeatletter \newrobustcmd*{\mknumAlph}[1]{% 
+\begingroup \blx@tempcnta=#1\relax \ifnum\blx@tempcnta>702 % 
+\else \ifnum\blx@tempcnta>26 % 
+\advance\blx@tempcnta\m@ne \divide\blx@tempcnta26\relax \blx@numAlph\blx@tempcnta \multiply\blx@tempcnta26\relax \blx@tempcnta=\numexpr#1-\blx@tempcnta\relax \fi \fi \blx@numAlph\blx@tempcnta \endgroup}
+\def\blx@numAlph#1{% 
+\ifcase#1\relax\blx@warning@entry{Value out of range}\number#1\or A\or B\or C\or D\or E\or F\or G\or H\or I\or J\or K\or L\or M\or N\or O\or P\or Q\or R\or S\or T\or U\or V\or W\or X\or Y\or Z\else \blx@warning@entry{Value out of range}\number#1\fi} \makeatother 
+
+
+\makeatletter
+\newrobustcmd*{\mknumcode}[1]{\textcolor{black!70!green}{P#1}}
+\makeatother
+%
+\makeatletter
+\newrobustcmd*{\mknumcodeext}[1]{\textcolor{black!70!green}{S#1}}
+\makeatother
+
+\makeatletter
+\newrobustcmd*{\mknummine}[1]{\textcolor{black!20!blue}{#1}}
+\makeatother
+ 
+\DeclareFieldFormat{labelnumber}{\ifkeyword{secondary}{\mknummine{#1}}{\ifkeyword{bibcode}{\mknumcode{#1}}{\ifkeyword{bibcode_ext}{\mknumcodeext{#1}}{\ifkeyword{mine}{\mknumAlph{#1}}{\ifkeyword{minesub}{\mknumAlph{#1}}{#1}}}}}}
+%mknumAlph
+%\DeclareFieldFormat{labelnumber}{\ifkeyword{bibcode}{\mknumcode{#1}}{#1}}
+%
+%\DeclareFieldFormat{labelnumber}{\ifkeyword{bibcode_ext}{\mknumcodeext{#1}{#1}} 
+
+
+
+
+
+
+% pour éviter les nom en majuscules
+\DefineBibliographyExtras{french}{% 
+  \renewcommand{\mkbibnamelast}[1]{{\hyphenrules{nohyphenation}#1}}% 
+} 
+
+% The following definition is copied from authortitle.bbx/authoryear.bbx
+\defbibenvironment{nolabelbib}
+  {\list
+     {}
+     {\setlength{\leftmargin}{\bibhang}%
+      \setlength{\itemindent}{-\leftmargin}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}}
+  {\endlist}
+  {\item}
+
+
+
+%%% 
+
+\newcommand{\pub}[1]{\hfill {\small \normalfont \sffamily\color{blue!50!black} (Related publication: \autocite{#1})}\newline\noindent}
+\newcommand{\pubs}[1]{\hfill {\small \normalfont \sffamily\color{blue!50!black} (#1)}\newline\noindent}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END BLACK MAGIC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 
+
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\cventry{2016-2021}{Gatsby Computational Neuroscience Unit - UCL }{London,  UK}{}{}
+{\textit{PhD in Machine Learning\\}
+Advisor: Arthur Gretton\\
+Subject: Regularization and Optimization of Generative Adversarial Networks.} 
+\cventry{2014-2015}{École Normale Supérieure}{Cachan, France}{}{}
+{\textit{MSc in Machine Learning and Computer Vision (MVA). High honors.\\}
+Courses: Graphical models, Kernel methods, Convex optimization, Reinforcement Learning, Object Recognition and Computer Vision. } % Arguments not required can be left empty
+\cventry{2011-2014}{École Polytechnique}{Palaiseau, France}{}{}
+{\textit{B.S. \& M.S. in Applied Mathematics with minor physics. GPA: 3.93/4.\\}
+Major: Probability and Measure theory, Statistics, Learning theory, Dynamical systems, Distribution theory, Stochastic Calculus.\\ 
+Minor: Quantum mechanics, Statistical physics, Special Relativity. 
+}
+\cventry{2009-2011}{Moulay Youssef \& Omar Ibn Al Khattab}{ Rabat \& Meknes, Morocco}{}
+{}{Preparatory classes for the French national entrance exams for admission to the ‘Grandes Ecoles’ Science and Engineering schools.
+}
+
+ 
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Research and Work Experience}
+\cventry{2021-Now}{Starting Research Fellow}{THOTH Team}{INRIA Grenoble Rhône-Alpes}{}{Unsupervised Representation learning, Optimization and Sampling.}
+\cventry{2016-2021}{Gatsby Computational Neuroscience Unit - UCL }{London,  UK}{}{}
+{Adivsor: Arthur Gretton\\
+- Methods for Generative Adversarial methods \\
+- Optimization methods based on Optimal Transport Geometry \\
+- Particles samplers \\
+- Kernel methods for density estimation and classification \\
+- Optimization methods for Reinforcement Learning }
+\cventry{2015-2016}{Prophesee}{Paris, France}{}{}{
+\textit{Computer Vision Research Engineer\\}
+-Real-time multi-target tracking algorithms for Neuromorphic event-based cameras.\\
+-Auto-calibration algorithms for event-based stereo cameras using structure from motion.}
+\cventry{2015}{Ecole Normale Sup\'{e}rieure}{Paris, France}{}{}{
+\textit{Visiting Student Researcher\\}
+Advisor: Stéphane Mallat\\
+Recurrent networks  for long-range dependencies in simple grammars using wavelets.}
+\cventry{2014}{Princeton University}{Princeton, USA}{}{}{
+\textit{Visiting Student Researcher\\}
+Advisor: René Carmona\\
+Mean field games with a dependence on the distribution of the  control: an Existence and Uniqueness result.}
+
+\section{Honors and Awards}
+\cvitem{2020}{Long Oral presentation at ICML 2021 for paper [3].  ~14\% of accepted papers, ~3\% of submitted papers).} 
+\cvitem{2020}{Spotlight presentation at ICLR 2020 for paper [3]. ~2\% of submitted papers.}                             
+\cvitem{2018}{Best Poster Award at MSR AI Summer School 2018 for paper [5]. Cambridge.}                         
+\cvitem{2016-present}{Fully Funded PhD Scholarship. Awarded  by the Gatsby Computational Neuroscience Unit.}
+\cvitem{2014}{Award of the Financial Risk Chair of École Polytechnique for research on Mean Field Games.}
+\cvitem{2011--2014}{Fully Funded Masters Scholarship. Awarded by the French Government Eiffel Excellence Scholarship.}
+\cvitem{2011--2014}{Fully Funded Undergraduate Scholarship. Awarded by the French Government Eiffel Excellence Scholarship.}
+\cvitem{2009--2011}{National Moroccan merit scholarship ‘ISTIHQAQ’. For the first 100 national scores of high school final examinations.}
+\cvitem{2009}{Participation to the 50th International Mathematics Olympiad (IMO), Bremen, Germany.}
+
+
+\section{Research Activities}
+%\phantom{\cite{Arbel:2018,Arbel:2018a,Arbel:2021a,Arbel:2019,Arbel:2020}}
+\cventry{2018-present}{Reviewer}{}{}{}{-International conferences: NeurIPS (2018, 2019,2020), ICLR (2019,2020),ICML (2021)\\
+-International journals: JMLR }
+\cventry{2017-2019}{Research Seminars}{UCL}{}{}{
+-Co-organized the DeepMind/CSML weekly research seminars in Machine Learning with invited speakers from the UK and Europe.\\  
+-Co-organized pre-conference oral presentations events for selected accepted papers.\\
+-Managed an annual budget of 5000 \pounds. 
+}
+\cventry{2017-present}{Member of the Machine Learning Journal Club}{UCL}{}{}{Weekly held journal club on various topics in Machine Learning and Statistics.}
+\section{Publications}
+\cvitem{2022}{\textbf{Michael Arbel}, and Julien Mairal. Amortized Implicit Differentiation for Stochastic Bilevel Optimization.
+International Conference on Learning Representations (ICLR)}
+\cvitem{2022}{Ted Moskovitz, \textbf{Michael Arbel}, Jack Parker-Holder, and Aldo Pacchiano. Towards an Understanding of Default Policies in Multitask Policy Optimization. 
+International Conference on Artificial Intelligence and Statistics (AISTATS)}
+\cvitem{2021}{\textbf{Michael Arbel*},  Alexander GDG Matthews*, Arnaud Doucet. Annealed Flow Transport Monte Carlo. International Conference on Machine Learning (ICML).  *equal contribution.}
+\cvitem{2021}{Ted Moskovitz, Jack Parker-Holder, Aldo Pacchiano, \textbf{ Michael Arbel}, Jordan, Michael I. Tactical Optimism and Pessimism for Deep Reinforcement Learning.  \textit{Adv. Neural Information Processing Systems (NeurIPS)}}
+\cvitem{2020}{\textbf{Michael Arbel*},  Ted Moskovitz*, Ferenc Huszar,  Arthur Gretton. Efficient Wasserstein Natural Gradients for Reinforcement Learning.  \textit{International Conference on Learning Representations (ICLR).}  *equal contribution.}
+\cvitem{2020}{\textbf{Michael Arbel},  Liang Zhou, Arthur Gretton. Generalized Energy Based Models.  \textit{International Conference on Learning Representations (ICLR)}.}
+\cvitem{2020}{Samuel Cohen, \textbf{Michael Arbel}, Marc Peter Deisenroth. Estimating Barycenters of Measures in High Dimensions.  \textit{arXiv preprint }.}
+\cvitem{2020}{Louis Thiry, \textbf{Michael Arbel}, Eugene Belilovsky, Edouard Oyallon. The Unreasonable Effectiveness of Patches in Deep Convolutional Kernels Methods.  \textit{International Conference on Learning Representations (ICLR)}.}
+\cvitem{2020}{Anna Korba, Adil Salim, \textbf{Michael Arbel}, Giulia Luise, Arthur Gretton. A Non-Asymptotic Analysis for Stein Variational Gradient Descent.\textit{ NeurIPS 2020}.}
+\cvitem{2020}{Tolga Birdal, \textbf{Michael Arbel}, Umut Simsekli, Leonidas Guibas. Synchronizing Probability Measures on Rotations via Optimal Transport.  \textit{CVPR 2020}.}
+\cvitem{2020}{\textbf{Michael Arbel}, Arthur Gretton, Wuchen Li, Guido Montufar. Kernelized Wasserstein Natural Gradient.  \textit{ICLR 2020}.}
+\cvitem{2019}{\textbf{Michael Arbel}, Anna Korba, Adil Salim, Arthur Gretton. Maximum Mean Discrepancy Gradient Flow.  \textit{NeurIPS 2019}. }
+
+\cvitem{2018}{\textbf{Michael Arbel*}, Dougal J. Sutherland*, Mikołaj Bińkowski, Arthur Gretton. On gradient regularizers for MMD GANs.  \textit{NeurIPS 2018}. *equal contribution.}
+
+\cvitem{2018}{Mikołaj Bińkowski, Dougal J. Sutherland, \textbf{Michael Arbel}, Arthur Gretton. Demystifying MMD GANs. \textit{ICLR 2018}. }
+
+\cvitem{2018}{Dougal J. Sutherland, Heiko Strathmann, \textbf{Michael Arbel}, Arthur Gretton. Efficient and principled score estimation. \textit{AISTATS 2018}. }
+\cvitem{2018}{\textbf{Michael Arbel}, Arthur Gretton. Kernel Conditional Exponential Family. \textit{AISTATS 2018}. }
+ 
+\section{Teaching Experience}
+\cventry{2019}{Machine Learning Summer School }{London, UK}{}{}
+{\textit{Teaching assistant} for the \textbf{Optimization} Tutorial.} 
+\cventry{2017}{Gatsby Computational Neuroscience Unit - UCL }{London,  UK}{}{}
+{\textit{Teaching assistant} for Probabilistic and Unsupervised Learning.\\
+\textit{Teaching assistant} for Advanced Topics in Machine Learning.} 
+ 
+
+
+
+\section{Invited Talks}
+
+\cvitem{2020}{Kernelized Wasserstein Natural Gradient. Workshop on Functional Inference and Machine Intelligence, EURECOM (Sophia Antipolis, France).}
+
+\cvitem{2020}{Maximum Mean Discrepancy Gradient flow.. The Alan Turing Institute (London, UK)..}
+
+\cvitem{2020}{Wasserstein Natural Gradient: a kernel perspective. Department of Statistics, University of Oxford (Oxford, UK).}
+
+\cvitem{2019}{Kernelized Wasserstein Natural Gradient. The Alan Turing Institute (London, UK)..}
+
+\cvitem{2019}{Maximum Mean Discrepancy Gradient flow.
+Amazon Research Days (Berlin, Germany).}
+
+\cvitem{2019}{MMD Gradient flow. Workshop on Recent developments in kernel methods, 2019, UCL (London, UK).}
+
+\cvitem{2019}{Kernel Distances for Deep Generative Models. Deep Learning Theory Kickoff Meeting 2019, MPI (Leipzig, Germany).}
+
+\cvitem{2018}{On Gradient Regularizers for MMD-GANs. Cambridge-Tübingen workshop 2018 (Tenerife, Spain).}
+
+\cvitem{2018}{Gradient Regularizers for MMD-GANs. Google Developer Group Reading and Thames Valley (Reading, UK).}
+
+
+\section{Software}
+\cvitem{2020}{Pytorch implementation of  Generalized Energy Based Models [1]. BSD 3-Clause License}
+\cvitem{2019}{Pytorch implementation of the Measure synchronization on quaternion manifolds based on paper [5]. BSD 3-Clause License}
+\cvitem{2019}{KWNG: Pytorch implementation of the optimizer based on paper [6]. BSD 3-Clause License}
+\cvitem{2019}{MMDflow: Pytorch implementation of the noise-injection algorithm based on paper [7]. BSD 3-Clause License}
+\cvitem{2018}{SMMD-GAN: Tensoflow implementation of scaled MMD-GAN based on paper [8]. BSD 3-Clause License}
+\cvitem{2018}{KCEF: Python implementation the conditional density estimator based on paper [11]. BSD 3-Clause License}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\section{Languages}
+\cvitem{Natural}{English (full proficiency), French (native).}
+\cvitem{Programming}{Python, C++, Pytorch and Tensorflow.}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

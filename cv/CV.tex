@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://  creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+  
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[francais]{layout}
+\usepackage{shellesc} % For \write18
+\usepackage{filecontents} % Ensure we can manage local files
+
+% Download the BibTeX file automatically (adjust URL)
+
+
+
+
+\usepackage[scale=0.90]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{2.3cm} %
+% personal data
+\name{Michael}{Arbel}
+\title{{\huge Machine Learning Researcher}}                               
+\address{655 Av. de l'Europe}{38330 Montbonnot-Saint-Martin}{France}
+\email{michael.n.arbel@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{https://michaelarbel.github.io}                         % optional, remove / comment the line if not wanted
+
+% Social icons
+\social[linkedin]{https://www.linkedin.com/in/michael-arbel-0a38a655/}                        % optional, remove / comment the line if not wanted                          % optional, remove / comment the line if not wanted
+\social[twitter]{https://x.com/MichaelArbel}                             % optional, remove / comment the line if not wanted
+\social[github]{https://github.com/MichaelArbel}                              
+\usepackage[defernumbers=true,style=numeric,maxbibnames=9,maxcitenames=1,uniquelist=true,backend=biber,giveninits=true,sorting=ydnt,doi=true,url=false]{biblatex} 
+\addbibresource{https://haltools.inria.fr/Public/exportPubli.php?auteur_exp=Michael\%2CArbel&format_export=bibtex&langue=Anglais&CB_accent_latex=oui}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END BLACK MAGIC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 
+
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Academic positions}
+\cventry{Since 2022}{Member of the Thoth team}{Researcher at Inria}{Grenoble, France}{}{}
+\cventry{2021-2022}{Working with Julien Mairal on bilevel optimization}{Starting Research Fellow at Inria}{Grenoble, France}{}{}
+
+\section{Education}
+\cventry{2016-2021}{Under the supervision of Arthur Gretton}{PhD in Machine Learning, University College London}{London, UK}{\textit{No revisions}}{ 
+Dissertation: Regularization and Optimization of Generative Adversarial Networks.} 
+\cventry{2014-2015}{Machine learning and computer vision (MVA)}{M.S. in applied mathematics at École Normale Supérieure}{Cachan, France}{\textit{High honors}}{Master's thesis at École Normale Supérieure de Paris under the supervision of  Stéphane Mallat, 
+\\Subject: Wavelet analysis of long-range dependencies in simple grammars.}
+\cventry{2011-2014}{Minor in physics}{B.S. \& M.S. in applied mathematics at École Polytechnique}{Palaiseau, France}{ GPA: 3.93/4}{
+Master thesis at Princeton University, under the supervision of René Carmona,\\
+Subject: Mean field games with a dependence on the distribution of the  control.}
+
+\section{Industrial positions}
+\cventry{2015-2016}{Computer Vision for neuromorphic cameras}{Research Engineer at Prophesee}{Paris, France}{}{}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Grants and scholarships}
+\cvitem{2024-2028}{Research grant from ANR for project BONSAI, \textbf{ 374K euros}.}
+\cvitem{2021-2022}{Starting research grant from INRIA, \textbf{ 10K euros}. }
+\cvitem{2016-2021}{Scholarship from Gatsby Computational Neuroscience Unit for the PhD program. 22K pounds/year}
+\cvitem{2011-2014}{Scholarship from the Eiffel Excellence Scholarship program. 14K euros/year. }
+
+
+\section{Honors and Awards}
+\cvitem{2024}{Spotlight presentation at NeurIPS 2024. ~10\% of submitted papers.} 
+\cvitem{2022}{Long Oral presentation at AISTATS 2022.  Top ~4\% of accepted papers.} 
+\cvitem{2021}{Long Oral presentation at ICML 2021.  Top ~14\% of accepted papers.} 
+\cvitem{2020}{Spotlight presentation at ICLR 2020. ~2\% of submitted papers.}                             
+\cvitem{2018}{Best Poster Award at MSR AI Summer School 2018 for paper [5]. Cambridge.}                         
+\cvitem{2014}{Award of the Financial Risk Chair of Polytechnique for the Master's thesis.}
+
+\section{Services to the Community}
+\subsection{Editorial Activities}
+\cventry{2023}{Area chair}{ICLR 2023 and NeurIPS 2023}{}{}{}
+\cventry{2020-present}{Editorial board}{Member of JMLR editorial board of reviewers.}{}{}{}
+\cventry{2018-2021}{Reviewer}{NeurIPS (2018-2021), ICLR (2019-2021), ICML (2021).}{}{}{}
+\subsection{Organization of scientific events}
+\cventry{2017-2019}{DeepMind/CSML Seminars}{UCL}{London, UK}{}{
+Weekly research seminars in Machine Learning with invited speakers from the UK and Europe. Annual budget: 5K pounds.
+}
+
+
+
+
+
+
+\subsection{Teaching graduate courses}
+
+\cventry{2022-present}{Kernel methods for statistical learning }{ENS Paris-Saclay}{Saclay, France}{}{}
+\cventry{2022-present}{Advanced kernel learning}{Universi\'{e} Grenoble Alpes}{Grenoble, France}{}{}
+\cventry{2023-2024}{Intelligent systems}{Universi\'{e} Grenoble Alpes}{Grenoble, France}{}{}
+
+\section{Software}
+\cvitem{\href{https://github.com/inria-thoth/mlxp}{MLXP}}{Main author of the package MLXP for automatically launching/tracking/querying several machine learning experiments. MIT License.}
+\cvitem{\href{https://github.com/MichaelArbel/GeneralizedEBM}{GEBM}}{Pytorch implementation of  Generalized EBMs. BSD 3-Clause License}
+\cvitem{\href{https://github.com/MichaelArbel/OT-sync}{OT-sync}}{Pytorch implementation of the Measure synchronization on quaternion manifolds. BSD 3-Clause License}
+\cvitem{\href{https://github.com/MichaelArbel/KWNG}{KWNG}}{Pytorch implementation of the optimizer. BSD 3-Clause License}
+\cvitem{\href{https://github.com/MichaelArbel/MMD-gradient-flow}{MMDflow}}{Pytorch implementation of the noise-injection algorithm. BSD 3-Clause License}
+\cvitem{\href{https://github.com/MichaelArbel/Scaled-MMD-GAN}{SMMD-GAN}}{Tensoflow implementation of scaled MMD-GAN. BSD 3-Clause License}
+
+
+\section{Selected Invited Talks}
+
+
+\subsection{Invited talks at conferences and workshops}
+
+\cvitem{2023}{Bayes Comp. Levi, Finland.}
+
+\cvitem{2023}{Conference in Mathematics and Image Analysis. Berlin, Germany.}
+
+\cvitem{2022}{Learning and Optimization in Luminy workshop. Luminy, France.}
+\cvitem{2022}{ELISE Theory Workshop on Machine Learning Fundamentals. EURECOM, Sophia Antipolis, France.}
+\cvitem{2020}{Workshop on Functional Inference and Machine Intelligence, EURECOM.}
+\cvitem{2019}{Amazon Research Days (Berlin, Germany).}
+\cvitem{2019}{Workshop on Recent developments in kernel methods, 2019, UCL (London, UK).}
+\cvitem{2019}{Deep Learning Theory Kickoff Meeting 2019, MPI (Leipzig, Germany).}
+\cvitem{2018}{Cambridge-Tübingen workshop 2018 (Tenerife, Spain).}
+
+
+\subsection{Seminars}
+
+\cvitem{2021}{NYU Center for Data Science. (NY, USA) Remote.}
+
+\cvitem{2021}{Instituto Superior Técnico, Lisbon, Portugal (Remote).}
+
+\cvitem{2020}{The Alan Turing Institute (London, UK).}
+\cvitem{2020}{Department of Statistics, University of Oxford (Oxford, UK).}
+\cvitem{2019}{The Alan Turing Institute (London, UK).}
+\cvitem{2018}{Google Developer Group Reading and Thames Valley (Reading, UK).}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+\nocite{*}
+\printbibliography[heading=none,title=none]
+
+%
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------  
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+ 
+\end{document}
