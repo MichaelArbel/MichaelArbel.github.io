@@ -46,11 +46,18 @@
 <script src="/assets/js/theme.js"></script>
 <script src="/assets/js/dark_mode.js"></script>
 
-<script src="/assets/js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
     <!-- <bibtex src="https://haltools.inria.fr/Public/exportPubli.php?auteur_exp=Michael\%2CArbel&format_export=bibtex&langue=Anglais&CB_accent_latex=oui"></bibtex> -->
 
 
-    <bibtex src="https://scholar.googleusercontent.com/citations?view_op=export_citations&user=NsOqVtkAAAAJ&citsig=AHomdjUAAAAAZ7Gi60AtZsy2L7a8O2T22Sb2O6k&hl=fr"></bibtex>
+    <!-- <bibtex src="https://scholar.googleusercontent.com/citations?view_op=export_citations&user=NsOqVtkAAAAJ&citsig=AHomdjUAAAAAZ7M3T8AgWI2O7VdMCbtnn4i1FyE&hl=fr"></bibtex> -->
+
+    <bibtex src="assets/bibliography/bibliography.bib"></bibtex>
+
+    <style>
+    bibtex { display: none; }
+    #bibtex_errors { margin-top:10px; color: red;}
+    </style>
 
   </head>
 
@@ -192,18 +199,61 @@
  -->
    
 
-        <div class="bibtex_structure">
+<!--         <div class="bibtex_structure">
           <div class="group year" extra="DESC number">
               <div class="templates"></div>
           </div>
+        </div> -->
+
+        <div class="bibtex_structure">
+          <!-- <div class="sections bibtextypekey"> -->
+
+            <!-- Section for Journal Articles -->
+            <!-- <div class="section ARTICLE|INPROCEEDINGS"> -->
+              <div class="group year" extra="DESC number">
+                  <div class="templates"></div>
+              </div>
+            <!-- </div> -->
+
+          <!-- </div> -->
         </div>
 
+
+
+<!--       <div id="bibtex_errors"></div>
+      <h1> Rendered Publications</h1>
+
+      <div class="bibtex_topics"> </div>
+        <div class="bibtex_structure">
+            <div class="section @article">
+              <h1>Refereed Articles</h1>
+              <div class="sort year" extra="ASC number">
+                <div class="templates"></div>
+              </div>
+            </div>
+        </div>
+          -->
+<!--           <div class="bibtex_structure">
+              <div class="section @ARTICLE|@INPROCEEDINGS|@INCOLLECTION">
+                <h1>Refereed Articles</h1>
+                <div class="sort year" extra="DESC number">
+                  <div class="templates"></div>
+                </div>
+              </div>
+              <div class="section @misc|@phdthesis|@mastersthesis|@bachelorsthesis|@techreport">
+                <h1>Other Publications</h1>
+                <div class="sort year" extra="DESC number">
+                  <div class="templates"></div>
+                </div>
+              </div>
+          </div> -->
 
 
           <div id="bibtex_display">
         
             <div class="bibtex_template">
-              <ul> <li>
+              <ul> 
+                <li class="if journal">
                 <span class="if title">
                   <a class="url">
                       <span class="title"></span>,
@@ -213,11 +263,51 @@
                   <span class="author"></span>
                 </div>
                 <div>
-                  <span class="if journal"><em><span class="journal"></span></em></span>
-                  <span class="if month"><span class="month"></span>,</span> 
-                  <span class="if year"><span class="year"></span>.</span>
+                <span class="journal"></span>.
                 </div>
-              </li></ul>
+              </li>
+
+                <li class="if booktitle">
+                <span class="if title">
+                  <a class="url">
+                      <span class="title"></span>,
+                  </a>
+                </span>
+                <div class="if author">
+                  <span class="author"></span>
+                </div>
+                <div>
+                <span class="booktitle"></span>.
+                </div>
+              </li>
+
+
+<!--               <li class="if journal or booktitle">  
+                    
+                    <span class="if title">
+                      <a class="url"><span class="title"></span>,</a>
+                    </span>
+
+                    <div class="if author">
+                      <span class="author"></span>
+                    </div>
+
+                    <div class="if journal">
+                      <em><span class="journal"></span></em>
+                    </div>
+
+                    <div class="if booktitle">
+                      In <em><span class="booktitle"></span></em>
+                    </div>
+                    <div>
+                      <span class="if month"><span class="month"></span>,</span> 
+                      <span class="if year"><span class="year"></span>.</span>
+                    </div>
+                  </li> -->
+
+
+
+            </ul>
             </div>
         
           </div>

@@ -902,6 +902,10 @@ function BibtexDisplay() {
 
 }
 
+
+
+
+
 function bibtex_js_draw() {
     $(".bibtex_template").hide();
     //Gets the BibTex files and adds them together
@@ -911,42 +915,30 @@ function bibtex_js_draw() {
         bibstring += $("#bibtex_input").val();
     }
     // Create request for bibtex files
-    // $('bibtex').each(function(index, value) {
-    //     var request = $.ajax({
-    //             url: $(this).attr('src'),
-    //             dataType: "text"
-    //         })
-    //         .done((data) => bibstring += data)
-    //         .fail((request, status, error) => console.error(error))
-    //     requests.push(request);
-    // });
+    $('bibtex').each(function(index, value) {
+        var request = $.ajax({
+                url: $(this).attr('src'),
+                dataType: "text"
+            })
+            .done((data) => bibstring += data)
+            .fail((request, status, error) => console.error(error))
+        requests.push(request);
+    });
 
-$("bibtex").each(function () {
-        var url = $(this).attr("src");
-        if (url) {
-            var proxyUrl = "https://api.allorigins.win/raw?url=" + encodeURIComponent(url); // Use another CORS proxy
-            
-            var request = fetch(proxyUrl)
-                .then(response => {
-                    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-                    return response.text();
-                })
-                .then(data => {
-                    console.log("Fetched BibTeX data:", data);
-                    bibstring += data;
-                })
-                .catch(error => console.error("Error fetching BibTeX:", error));
-
-            requests.push(request);
+    // Handle local file uploads
+    $("#bibtexFileInput").on("change", function (event) {
+        let file = event.target.files[0];
+        if (file) {
+            let reader = new FileReader();
+            reader.onload = function (e) {
+                console.log("Loaded BibTeX from local file:", e.target.result);
+                bibstring += e.target.result + "\n\n";
+            };
+            reader.readAsText(file);
         }
     });
 
 
-
-    // Promise.all(requests).then(() => {
-    //     console.log("All BibTeX data loaded:", bibstring);
-    //     $("#bibtex-content").text(bibstring); // Display in an HTML element
-    // });
     // Add default author format if it doesn't exist
     var authorFormat = $(".bibtex_template").find("span:not(a).author");
     if (authorFormat.length && !authorFormat.find("span:not(a)").length) {
@@ -983,6 +975,91 @@ $("bibtex").each(function () {
         loadExtras();
     });
 }
+
+
+
+
+// function bibtex_js_draw() {
+//     $(".bibtex_template").hide();
+//     //Gets the BibTex files and adds them together
+//     var bibstring = "";
+//     var requests = [];
+//     if ($("#bibtex_input").length) {
+//         bibstring += $("#bibtex_input").val();
+//     }
+//     // Create request for bibtex files
+//     // $('bibtex').each(function(index, value) {
+//     //     var request = $.ajax({
+//     //             url: $(this).attr('src'),
+//     //             dataType: "text"
+//     //         })
+//     //         .done((data) => bibstring += data)
+//     //         .fail((request, status, error) => console.error(error))
+//     //     requests.push(request);
+//     // });
+
+//     $("bibtex").each(function () {
+//             var url = $(this).attr("src");
+//             if (url) {
+//                 var proxyUrl = "https://api.allorigins.win/raw?url=" + encodeURIComponent(url); // Use another CORS proxy
+                
+//                 var request = fetch(proxyUrl)
+//                     .then(response => {
+//                         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+//                         return response.text();
+//                     })
+//                     .then(data => {
+//                         console.log("Fetched BibTeX data:", data);
+//                         bibstring += data;
+//                     })
+//                     .catch(error => console.error("Error fetching BibTeX:", error));
+
+//                 requests.push(request);
+//             }
+//         });
+
+
+
+//     // Promise.all(requests).then(() => {
+//     //     console.log("All BibTeX data loaded:", bibstring);
+//     //     $("#bibtex-content").text(bibstring); // Display in an HTML element
+//     // });
+//     // Add default author format if it doesn't exist
+//     var authorFormat = $(".bibtex_template").find("span:not(a).author");
+//     if (authorFormat.length && !authorFormat.find("span:not(a)").length) {
+//         authorFormat.append($("<span></span>").attr("class", "first"));
+//         authorFormat.append($("<span></span>").attr("class", "von")
+//             .attr("bibtex-js-rif", "").text(" "));
+//         authorFormat.append($("<span></span>").attr("class", "last")
+//             .attr("bibtex-js-rif", "").text(" "));
+//         authorFormat.append($("<span></span>").attr("class", "junior").text(", "));
+//     }
+//     // Executed on completion of last outstanding ajax call
+//     $.when.apply($, requests).then(function() {
+//         // Check if we have a bibtex_display id or classes
+//         if ($("#bibtex_display").length) {
+//             var bibtex_display = $("#bibtex_display");
+//             (new BibtexDisplay()).displayBibtex(bibstring, bibtex_display);
+//             if (bibtex_display.attr("callback")) {
+//                 var callback = new Function('bibtex_display', bibtex_display.attr("callback"));
+//                 callback(bibtex_display[0]);
+//             }
+//         } else if ($(".bibtex_display").length) {
+//             // Loop through all bibtex_displays on the page
+//             $(".bibtex_display").each(function(index) {
+//                 // ($this) is the class node output for the bitex entries
+//                 (new BibtexDisplay()).displayBibtex(bibstring, $(this));
+//                 if ($(this).attr("callback")) {
+//                     var callback = new Function('bibtex_display', $(this).attr("callback"));
+//                     callback($(this)[0]);
+//                 }
+//             });
+//         }
+//         // Remove elements from html that are not needed to display
+//         $(".bibtex_structure").remove();
+//         loadExtras();
+//     });
+// }
 
 /** 
 BibTex Searcher is used with input form
