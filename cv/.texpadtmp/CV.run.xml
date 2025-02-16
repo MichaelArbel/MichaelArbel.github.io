@@ -79,7 +79,7 @@
       <file>CV.bcf</file>
     </requires>
     <requires type="editable">
-      <file>https://scholar.googleusercontent.com/citations?view_op=export_citations&user=NsOqVtkAAAAJ&citsig=AHomdjUAAAAAZ7Gi60AtZsy2L7a8O2T22Sb2O6k&hl=fr</file>
+      <file>https://raw.githubusercontent.com/MichaelArbel/MichaelArbel.github.io/refs/heads/master/assets/bibliography/bibliography.bib</file>
     </requires>
   </external>
 </requests>

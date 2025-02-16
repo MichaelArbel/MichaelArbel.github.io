@@ -89,6 +89,44 @@
       \field{year}{2025}
       \true{nocite}
     \endentry
+    \entry{khoury2025learning}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d466a133eb08495ae6f0ac97d6912dae}{%
+           family={Khoury},
+           familyi={K\bibinitperiod},
+           given={Fares\bibnamedelima El},
+           giveni={F\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=5d4564c6c9b71293b0c1cf857cdb115f}{%
+           family={Pauwels},
+           familyi={P\bibinitperiod},
+           given={Edouard},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6996a09d1827cf33d41a4b0e0d8ea711}{%
+           family={Vaiter},
+           familyi={V\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
+           family={Arbel},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{4120a8c9c6d34aa8019bb103bee23c82}
+      \strng{fullhash}{e3b75a7bcfb2d6bfbeae86fbf1414624}
+      \strng{bibnamehash}{e3b75a7bcfb2d6bfbeae86fbf1414624}
+      \strng{authorbibnamehash}{e3b75a7bcfb2d6bfbeae86fbf1414624}
+      \strng{authornamehash}{4120a8c9c6d34aa8019bb103bee23c82}
+      \strng{authorfullhash}{e3b75a7bcfb2d6bfbeae86fbf1414624}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2502.08457}
+      \field{title}{Learning Theory for Kernel Bilevel Optimization}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
     \entry{arbel2024mlxp}{inproceedings}{}
       \name{author}{2}{ul=2}{%
         {{hash=1d5a8d0a544c04a3c2bf1f1a2547d9ab}{%
@@ -269,7 +307,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2403.20233}
+      \field{journaltitle}{Advances in Neural Information Processing Systems (NeurIPS) 2024}
       \field{title}{Functional Bilevel Optimization for Machine Learning}
       \field{year}{2024}
       \true{nocite}
@@ -376,7 +414,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Workshop on Advancing Neural Network Training: Computational Efficiency, Scalability, and Resource Optimization (WANT@ NeurIPS 2023)}
+      \field{booktitle}{Workshop on Advancing Neural Network Training (WANT@ NeurIPS 2023)}
       \field{title}{Improving Deep Ensembles without Communication}
       \field{year}{2023}
       \true{nocite}
@@ -598,53 +636,6 @@
       \field{labeltitlesource}{title}
       \field{booktitle}{International Conference on Artificial Intelligence and Statistics (AISTATS) 2022}
       \field{title}{Towards an Understanding of Default Policies in Multitask Policy Optimization}
-      \field{year}{2022}
-      \true{nocite}
-    \endentry
-    \entry{rodrigues2022investigating}{article}{}
-      \name{author}{6}{}{%
-        {{hash=aed400e77c1dc55e354357420cd8ecf0}{%
-           family={Rodrigues},
-           familyi={R\bibinitperiod},
-           given={PL},
-           giveni={P\bibinitperiod}}}%
-        {{hash=e9d27e08d02960c43b6586b2b005214a}{%
-           family={Statify},
-           familyi={S\bibinitperiod},
-           given={Inria},
-           giveni={I\bibinitperiod}}}%
-        {{hash=bc4cc9c5209288039fa05ed584b31834}{%
-           family={Arbel},
-           familyi={A\bibinitperiod},
-           given={Michael\bibnamedelima N},
-           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=91c307d13f6a335eb00595c15f23201e}{%
-           family={Thoth},
-           familyi={T\bibinitperiod},
-           given={Inria},
-           giveni={I\bibinitperiod}}}%
-        {{hash=4695f208db45e7592ce1018344e4ba8d}{%
-           family={Forbes},
-           familyi={F\bibinitperiod},
-           given={Florence},
-           giveni={F\bibinitperiod}}}%
-        {{hash=d699b6cdc55cf5811dd19c9a2e13c7c1}{%
-           family={Mairal},
-           familyi={M\bibinitperiod},
-           given={Julien},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{0f34fa4d02185fb721adce0c3e21e6fe}
-      \strng{fullhash}{99e977a36a78ed35d6f6100db8d89bed}
-      \strng{bibnamehash}{99e977a36a78ed35d6f6100db8d89bed}
-      \strng{authorbibnamehash}{99e977a36a78ed35d6f6100db8d89bed}
-      \strng{authornamehash}{0f34fa4d02185fb721adce0c3e21e6fe}
-      \strng{authorfullhash}{99e977a36a78ed35d6f6100db8d89bed}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Investigating model misspecification in simulation-based inference}
       \field{year}{2022}
       \true{nocite}
     \endentry

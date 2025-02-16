@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '/Users/MichaelArbel/Documents/Websites/MichaelArbel.github.io/cv/.texpadtmp/CV.blg'
-[32] biber-darwin:340> INFO - === Sat Feb 15, 2025, 09:43:41
-[40] Biber.pm:419> INFO - Reading '/Users/MichaelArbel/Documents/Websites/MichaelArbel.github.io/cv/.texpadtmp/CV.bcf'
-[70] Biber.pm:976> INFO - Using all citekeys in bib section 0
-[77] Biber.pm:4419> INFO - Processing section 0
-[82] Biber.pm:4610> INFO - Looking for bibtex file 'https://scholar.googleusercontent.com/citations?view_op=export_citations&user=NsOqVtkAAAAJ&citsig=AHomdjUAAAAAZ7Gi60AtZsy2L7a8O2T22Sb2O6k&hl=fr' for section 0
-[82] Utils.pm:168> INFO - Data source 'https://scholar.googleusercontent.com/citations?view_op=export_citations&user=NsOqVtkAAAAJ&citsig=AHomdjUAAAAAZ7Gi60AtZsy2L7a8O2T22Sb2O6k&hl=fr' is a remote BibTeX data source - fetching ...
-[1008] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1027] bibtex.pm:1519> INFO - Found BibTeX data source '/var/folders/z3/zlrg5qs15dj6pp02bnqxd3n80000gr/T/biber_tmp_SGWx/biber_remote_data_source_qUrXl.bib'
-[1153] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1153] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1153] Biber.pm:4239> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
-[1153] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[1169] bbl.pm:660> INFO - Writing '/Users/MichaelArbel/Documents/Websites/MichaelArbel.github.io/cv/.texpadtmp/CV.bbl' with encoding 'UTF-8'
-[1179] bbl.pm:763> INFO - Output to /Users/MichaelArbel/Documents/Websites/MichaelArbel.github.io/cv/.texpadtmp/CV.bbl
-[1179] Biber.pm:131> WARN - legacy month field '11~28' in entry 'marrie2024data' is not an integer - this will probably not sort properly.
-[1179] Biber.pm:133> INFO - WARNINGS: 1
+[29] biber-darwin:340> INFO - === Sun Feb 16, 2025, 17:57:14
+[39] Biber.pm:419> INFO - Reading '/Users/MichaelArbel/Documents/Websites/MichaelArbel.github.io/cv/.texpadtmp/CV.bcf'
+[69] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[76] Biber.pm:4419> INFO - Processing section 0
+[81] Biber.pm:4610> INFO - Looking for bibtex file 'https://raw.githubusercontent.com/MichaelArbel/MichaelArbel.github.io/refs/heads/master/assets/bibliography/bibliography.bib' for section 0
+[81] Utils.pm:168> INFO - Data source 'https://raw.githubusercontent.com/MichaelArbel/MichaelArbel.github.io/refs/heads/master/assets/bibliography/bibliography.bib' is a remote BibTeX data source - fetching ...
+[653] bibtex.pm:1713> INFO - LaTeX decoding ...
+[673] bibtex.pm:1519> INFO - Found BibTeX data source '/var/folders/z3/zlrg5qs15dj6pp02bnqxd3n80000gr/T/biber_tmp_Sruq/biber_remote_data_source_xnE0X.bib'
+[799] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[799] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[800] Biber.pm:4239> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[800] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[815] bbl.pm:660> INFO - Writing '/Users/MichaelArbel/Documents/Websites/MichaelArbel.github.io/cv/.texpadtmp/CV.bbl' with encoding 'UTF-8'
+[823] bbl.pm:763> INFO - Output to /Users/MichaelArbel/Documents/Websites/MichaelArbel.github.io/cv/.texpadtmp/CV.bbl
+[823] Biber.pm:131> WARN - legacy month field '11~28' in entry 'marrie2024data' is not an integer - this will probably not sort properly.
+[823] Biber.pm:133> INFO - WARNINGS: 1
