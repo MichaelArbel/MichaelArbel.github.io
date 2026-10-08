@@ -1,0 +1,30 @@
+{% assign links = 'About|/,Team|/team/,Opportunities|/opportunities/,Projects|/projects/,Publications|/publications/,Software|/software/,Talks|/talks/,Teaching|/teaching/,Blog|/blog/' | split: ',' %}
+{% assign blog_posts = site.pages | where: "blog_post", true %}
+{% for item in links %}
+  {% assign parts = item | split: '|' %}
+  {% assign show_item = true %}
+  {% if parts[0] == 'Blog' and blog_posts.size == 0 %}
+    {% assign show_item = false %}
+  {% endif %}
+  {% if show_item %}
+  {% assign active = false %}
+  {% assign current = false %}
+  {% if page.url == parts[1] %}
+    {% assign active = true %}
+    {% assign current = true %}
+  {% elsif parts[0] == 'Projects' and page.url contains '/projects/' %}
+    {% assign active = true %}
+  {% endif %}
+  <li class="{{ include.item_class }}{% if active %} active{% endif %}"><a class="{{ include.link_class }}" href="{{ parts[1] | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ parts[0] }}{% if current %}<span class="sr-only">(current)</span>{% endif %}</a></li>
+  {% if parts[0] == 'Projects' %}
+    {% assign project_links = 'BONSAI|/projects/bonsai/,DELPHI|/projects/erc/' | split: ',' %}
+    {% for project in project_links %}
+      {% assign project_parts = project | split: '|' %}
+      {% assign project_active = false %}
+      {% if page.url == project_parts[1] %}{% assign project_active = true %}{% endif %}
+      <li class="{{ include.item_class }} {{ include.subitem_class }}{% if project_active %} active{% endif %}"><a class="{{ include.link_class }}" href="{{ project_parts[1] | relative_url }}"{% if project_active %} aria-current="page"{% endif %}>{{ project_parts[0] }}{% if project_active %}<span class="sr-only">(current)</span>{% endif %}</a></li>
+    {% endfor %}
+  {% endif %}
+  {% endif %}
+{% endfor %}
+<li class="{{ include.item_class }} {{ include.theme_item_class }}"><button class="theme-toggle" type="button" aria-label="Toggle dark mode"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button></li>

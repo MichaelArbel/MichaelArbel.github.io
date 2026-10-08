@@ -1,0 +1,47 @@
+{% for category in include.categories %}
+  {% assign matching_entries = 0 %}
+  {% for entry in category.entries %}
+    {% assign show_entry = true %}
+    {% if include.project %}
+      {% unless entry.projects contains include.project %}{% assign show_entry = false %}{% endunless %}
+    {% endif %}
+    {% if show_entry %}{% assign matching_entries = matching_entries | plus: 1 %}{% endif %}
+  {% endfor %}
+  {% if matching_entries > 0 %}
+    <h2 class="bibliography">{{ category.category }}</h2>
+    <ol class="bibliography">
+      {% for entry in category.entries %}
+        {% assign show_entry = true %}
+        {% if include.project %}
+          {% unless entry.projects contains include.project %}{% assign show_entry = false %}{% endunless %}
+        {% endif %}
+        {% if show_entry %}
+          <li class="software-item">
+            <div class="row">
+              {% if entry.image %}
+                <div class="col-sm-2 container_img">
+                  {% if entry.code_url %}<a href="{{ entry.code_url }}" target="_blank" rel="noopener noreferrer">{% endif %}
+                    <div class="card hoverable">
+                      <img class="card-img-top" src="{{ entry.image }}" alt="{{ entry.title | escape }}">
+                    </div>
+                  {% if entry.code_url %}</a>{% endif %}
+                </div>
+              {% endif %}
+              <div class="{% if entry.image %}col-sm-8{% else %}col-sm-10{% endif %}">
+                <div class="title">{{ entry.title | escape }}</div>
+                {% if entry.description %}<div class="description">{{ entry.description | escape }}</div>{% endif %}
+                {% if entry.code_url or entry.docs_url or entry.paper_url %}
+                  <div class="links">
+                    {% if entry.code_url %}<a href="{{ entry.code_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
+                    {% if entry.docs_url %}<a href="{{ entry.docs_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Documentation</a>{% endif %}
+                    {% if entry.paper_url %}<a href="{{ entry.paper_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">ArXiv</a>{% endif %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  {% endif %}
+{% endfor %}

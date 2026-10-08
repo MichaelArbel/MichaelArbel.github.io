@@ -32,30 +32,22 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
-\usepackage[francais]{layout}
-\usepackage{shellesc} % For \write18
-\usepackage{filecontents} % Ensure we can manage local files
-
-% Download the BibTeX file automatically (adjust URL)
-
-
-
-
+\usepackage{needspace}
 \usepackage[scale=0.90]{geometry} % Reduce document margins
 \setlength{\hintscolumnwidth}{2.3cm} %
 % personal data
 \name{Michael}{Arbel}
-\title{{\huge Machine Learning Researcher}}                               
-\address{655 Av. de l'Europe}{38330 Montbonnot-Saint-Martin}{France}
+\title{Research Scientist in Machine Learning}
+\address{Inria Grenoble -- Rhône-Alpes}{Grenoble}{France}
 \email{michael.n.arbel@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{https://michaelarbel.github.io}                         % optional, remove / comment the line if not wanted
+\homepage{michaelarbel.github.io}
 
 % Social icons
-\social[linkedin]{https://www.linkedin.com/in/michael-arbel-0a38a655/}                        % optional, remove / comment the line if not wanted                          % optional, remove / comment the line if not wanted
-\social[twitter]{https://x.com/MichaelArbel}                             % optional, remove / comment the line if not wanted
-\social[github]{https://github.com/MichaelArbel}                              
+\social[linkedin]{michael-arbel-0a38a655}
+\social[github]{MichaelArbel}
 \usepackage[defernumbers=true,style=numeric,maxbibnames=9,maxcitenames=1,uniquelist=true,backend=biber,giveninits=true,sorting=ydnt,doi=true,url=false]{biblatex} 
-\addbibresource{https://raw.githubusercontent.com/MichaelArbel/MichaelArbel.github.io/refs/heads/master/assets/bibliography/bibliography.bib}
+%\addbibresource{https://raw.githubusercontent.com/MichaelArbel/MichaelArbel.github.io/refs/heads/master/assets/bibliography/bibliography.bib}
+\addbibresource{../assets/bibliography/bibliography.bib}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -70,16 +62,19 @@
 
 \makecvtitle % Print the CV title
 
+\section{Research profile}
+\cvitem{}{I develop principled machine learning methods that combine data with structure, simulators, and implicit constraints for reliable scientific inference and decision-making. My research connects statistical learning theory, optimization, and empirical work, with current directions in functional bilevel optimization, predictive representation learning, and reliable tabular learning.}
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Academic positions}
-\cventry{Since 2022}{Member of the Thoth team}{Researcher at Inria}{Grenoble, France}{}{}
+\cventry{Since 2022}{THOTH team}{Research Scientist (Chargé de recherche), Inria}{Grenoble, France}{}{}
 \cventry{2021-2022}{Working with Julien Mairal on bilevel optimization}{Starting Research Fellow at Inria}{Grenoble, France}{}{}
 
 \section{Education}
-\cventry{2016-2021}{Under the supervision of Arthur Gretton}{PhD in Machine Learning, University College London}{London, UK}{\textit{No revisions}}{ 
+\cventry{2016-2021}{Under the supervision of Arthur Gretton}{PhD in Machine Learning, University College London}{London, UK}{\textit{Pass with no revisions}}{
 Dissertation: Regularization and Optimization of Generative Adversarial Networks.} 
 \cventry{2014-2015}{Machine learning and computer vision (MVA)}{M.S. in applied mathematics at École Normale Supérieure}{Cachan, France}{\textit{High honors}}{Master's thesis at École Normale Supérieure de Paris under the supervision of  Stéphane Mallat, 
 \\Subject: Wavelet analysis of long-range dependencies in simple grammars.}
@@ -95,24 +90,26 @@ Subject: Mean field games with a dependence on the distribution of the  control.
 %----------------------------------------------------------------------------------------
 
 \section{Grants and scholarships}
-\cvitem{2024-2028}{Research grant from ANR for project BONSAI, \textbf{ 374K euros}.}
+\cvitem{2027-2032}{\textbf{DELPHI, ERC Starting Grant}, \textbf{1.5M euros}. Awarded in 2026; scheduled to begin in October 2027. Implicitly constrained learning for scientific discovery and decision-making.}
+\cvitem{2024-2028}{\textbf{BONSAI, ANR JCJC}, \textbf{374K euros}. Project coordinator. Bilevel Optimization for Simulation-based Inference; March 2024--February 2028.}
 \cvitem{2021-2022}{Starting research grant from INRIA, \textbf{ 10K euros}. }
 \cvitem{2016-2021}{Scholarship from Gatsby Computational Neuroscience Unit for the PhD program. 22K pounds/year}
 \cvitem{2011-2014}{Scholarship from the Eiffel Excellence Scholarship program. 14K euros/year. }
 
 
+\needspace{10\baselineskip}
 \section{Honors and Awards}
-\cvitem{2024}{Spotlight presentation at NeurIPS 2024. ~10\% of submitted papers.} 
-\cvitem{2022}{Long Oral presentation at AISTATS 2022.  Top ~4\% of accepted papers.} 
-\cvitem{2021}{Long Oral presentation at ICML 2021.  Top ~14\% of accepted papers.} 
-\cvitem{2020}{Spotlight presentation at ICLR 2020. ~2\% of submitted papers.}                             
-\cvitem{2018}{Best Poster Award at MSR AI Summer School 2018 for paper [5]. Cambridge.}                         
+\cvitem{2024}{Spotlight presentation at NeurIPS 2024, \emph{Functional Bilevel Optimization for Machine Learning}.}
+\cvitem{2022}{Long oral presentation at AISTATS 2022.}
+\cvitem{2021}{Long oral presentation at ICML 2021.}
+\cvitem{2020}{Spotlight presentation at ICLR 2020.}
+\cvitem{2018}{Best Poster Award at MSR AI Summer School, Cambridge.}
 \cvitem{2014}{Award of the Financial Risk Chair of Polytechnique for the Master's thesis.}
 
 \section{Services to the Community}
 \subsection{Editorial Activities}
 \cventry{2023}{Area chair}{ICLR 2023 and NeurIPS 2023}{}{}{}
-\cventry{2020-present}{Editorial board}{Member of JMLR editorial board of reviewers.}{}{}{}
+\cventry{2020-present}{Board of reviewers}{Journal of Machine Learning Research (JMLR)}{}{}{}
 \cventry{2018-2021}{Reviewer}{NeurIPS (2018-2021), ICLR (2019-2021), ICML (2021).}{}{}{}
 \subsection{Organization of scientific events}
 \cventry{2017-2019}{DeepMind/CSML Seminars}{UCL}{London, UK}{}{
@@ -124,23 +121,37 @@ Weekly research seminars in Machine Learning with invited speakers from the UK a
 
 
 
-\subsection{Teaching graduate courses}
+\section{Research supervision}
+\cvitem{Current PhDs}{Supervision or co-supervision of Kenta Vert (2024--ongoing), Eloïse Touron (2024--ongoing), Fares El Khoury (2024--ongoing), and Pierre-Louis Ruhlmann (2023--ongoing).}
+\cvitem{PhD alumni}{Ieva Petrulionyte (2023--2026), co-supervised with Julien Mairal; Juliette Marrie (2022--2025), co-supervised with Julien Mairal and Diane Larlus.}
+\cvitem{Master's}{Tristan Martin (2026); Eloïse Touron and Camille Touron (2024); Ieva Petrulionyte (2023).}
+\cvitem{}{Research topics, collaborators, and representative student publications: \href{https://michaelarbel.github.io/team/}{michaelarbel.github.io/team/}.}
 
-\cventry{2022-present}{Kernel methods for statistical learning }{ENS Paris-Saclay}{Saclay, France}{}{}
-\cventry{2022-present}{Advanced kernel learning}{Universi\'{e} Grenoble Alpes}{Grenoble, France}{}{}
-\cventry{2023-2024}{Intelligent systems}{Universi\'{e} Grenoble Alpes}{Grenoble, France}{}{}
+\section{Teaching graduate courses}
+\cventry{2026-2027}{Co-instructor, \href{https://kernel-learning.github.io/}{From Basic Machine Learning Models to Advanced Kernel Learning}}{Université Grenoble Alpes}{Grenoble, France}{}{}
+\cventry{Spring 2026}{Co-instructor, \href{https://mva-kernel-methods.github.io/course-page/}{Machine Learning with Kernel Methods}}{Joint IASD, MVA, and MASH course}{Dauphine--PSL / ENS Paris-Saclay}{}{}
+\cvitem{Earlier teaching}{Kernel methods at ENS Paris-Saclay and advanced kernel learning at Université Grenoble Alpes since 2022; Intelligent Systems at Université Grenoble Alpes (2023--2024).}
 
-\section{Software}
-\cvitem{\href{https://github.com/inria-thoth/mlxp}{MLXP}}{Main author of the package MLXP for automatically launching/tracking/querying several machine learning experiments. MIT License.}
-\cvitem{\href{https://github.com/MichaelArbel/GeneralizedEBM}{GEBM}}{Pytorch implementation of  Generalized EBMs. BSD 3-Clause License}
-\cvitem{\href{https://github.com/MichaelArbel/OT-sync}{OT-sync}}{Pytorch implementation of the Measure synchronization on quaternion manifolds. BSD 3-Clause License}
-\cvitem{\href{https://github.com/MichaelArbel/KWNG}{KWNG}}{Pytorch implementation of the optimizer. BSD 3-Clause License}
-\cvitem{\href{https://github.com/MichaelArbel/MMD-gradient-flow}{MMDflow}}{Pytorch implementation of the noise-injection algorithm. BSD 3-Clause License}
-\cvitem{\href{https://github.com/MichaelArbel/Scaled-MMD-GAN}{SMMD-GAN}}{Tensoflow implementation of scaled MMD-GAN. BSD 3-Clause License}
+\section{Selected research software}
+\cvitem{\href{https://github.com/inria-thoth/mlxp}{MLXP}}{Main author. Python framework for reproducible machine learning experiments: launching, logging, and querying results. ACM REP 2024.}
+\cvitem{\href{https://github.com/MichaelArbel/EquiTabPFN}{EquiTabPFN}}{Target-permutation equivariant prior-fitted network for tabular learning. NeurIPS 2025.}
+\cvitem{\href{https://github.com/inria-thoth/funcBO}{funcBO}}{Functional bilevel optimization algorithms and applications. NeurIPS 2024 (Spotlight).}
+\cvitem{\href{https://github.com/MichaelArbel/BGS-opt}{BGS-opt}}{Research code for AmIGO and Bilevel Games with Selection, including hyperparameter optimization and dataset distillation. ICLR 2022; NeurIPS 2022.}
 
 
 \section{Selected Invited Talks}
 
+\subsection{Upcoming invitations}
+\cvitem{19 Oct. 2026}{\emph{When Predictive Self-Supervised Learning Becomes Canonical Correlation Analysis}. Gatsby Computational Neuroscience Unit, London.}
+\cvitem{13 Oct. 2026}{\emph{What Structure Does Predictive Self-Supervised Learning Recover?} Institute for Mathematics of Toulouse.}
+
+\subsection{Recent presentations}
+\cvitem{29 June 2026}{\emph{Bilevel optimization: A functional perspective with application to self-supervised learning}. SciCADE, Edinburgh; minisymposium on bilevel optimization for scientific computing.}
+\cvitem{17 June 2026}{\emph{PEIRA: Learning Predictive Encoders through Inter-View Regressor Alignment}. Optimization and Learning Day, LJK, Grenoble.}
+\cvitem{1 June 2026}{\emph{Bilevel optimization: A functional perspective with application to self-supervised learning}. SIAM Conference on Optimization.}
+\cvitem{21 Apr. 2026}{\emph{Learning Predictive Embeddings through Inter-View Regressor Alignment}. CILVR seminar, Center for Data Science, New York University.}
+\cvitem{Mar. 2026}{\emph{A functional approach to differentiable programming in machine learning}. Workshop on Flows on Measure Spaces and Applications in Machine Learning, Oberwolfach.}
+\cvitem{Feb. 2025}{\emph{Functional bilevel optimization: theory and algorithms}. RKHS Seminars, METU.}
 
 \subsection{Invited talks at conferences and workshops}
 

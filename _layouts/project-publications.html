@@ -1,0 +1,85 @@
+---
+layout: default
+---
+{% assign start_year = page.publication_start | slice: 0, 4 | plus: 0 %}
+{% assign start_month = page.publication_start | slice: 5, 2 | plus: 0 %}
+{% assign has_end = false %}
+{% if page.publication_end %}
+  {% assign end_year = page.publication_end | slice: 0, 4 | plus: 0 %}
+  {% assign end_month = page.publication_end | slice: 5, 2 | plus: 0 %}
+  {% assign has_end = true %}
+{% endif %}
+{% assign publication_count = 0 %}
+
+{% for publication in site.data.publications %}
+  {% assign publication_year = publication.year | plus: 0 %}
+  {% assign publication_month = publication.month | plus: 0 %}
+  {% assign after_start = false %}
+  {% assign before_end = true %}
+  {% if publication_year > start_year %}
+    {% assign after_start = true %}
+  {% elsif publication_year == start_year %}
+    {% if publication_month == 0 or publication_month >= start_month %}
+      {% assign after_start = true %}
+    {% endif %}
+  {% endif %}
+  {% if has_end %}
+    {% assign before_end = false %}
+    {% if publication_year < end_year %}
+      {% assign before_end = true %}
+    {% elsif publication_year == end_year %}
+      {% if publication_month == 0 or publication_month <= end_month %}
+        {% assign before_end = true %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+  {% if after_start and before_end %}{% assign publication_count = publication_count | plus: 1 %}{% endif %}
+{% endfor %}
+
+<section class="project-page">
+  {% include project-heading.html project=page.project_slug %}
+  {% include project-nav.html project=page.project_slug active=page.section %}
+  <div class="project-copy publications">
+    <h2>{{ page.title }}</h2>
+    {% if page.publication_period_label %}<p>{{ page.publication_period_label | escape }}</p>{% endif %}
+    {% if publication_count > 0 %}
+      <ol class="bibliography publication-list">
+        {% for publication in site.data.publications %}
+          {% assign publication_year = publication.year | plus: 0 %}
+          {% assign publication_month = publication.month | plus: 0 %}
+          {% assign after_start = false %}
+          {% assign before_end = true %}
+          {% if publication_year > start_year %}
+            {% assign after_start = true %}
+          {% elsif publication_year == start_year %}
+            {% if publication_month == 0 or publication_month >= start_month %}
+              {% assign after_start = true %}
+            {% endif %}
+          {% endif %}
+          {% if has_end %}
+            {% assign before_end = false %}
+            {% if publication_year < end_year %}
+              {% assign before_end = true %}
+            {% elsif publication_year == end_year %}
+              {% if publication_month == 0 or publication_month <= end_month %}
+                {% assign before_end = true %}
+              {% endif %}
+            {% endif %}
+          {% endif %}
+          {% if after_start and before_end %}
+            <li>
+              <div class="row">
+                <div class="col-sm-2 abbr"><abbr class="badge">{{ publication.year }}</abbr></div>
+                <div class="col-sm-10">
+                  <div class="title">{% if publication.url != empty %}<a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.title | escape }}</a>{% else %}{{ publication.title | escape }}{% endif %}</div>
+                  {% if publication.author %}<div class="author">{{ publication.author | escape }}</div>{% endif %}
+                  {% if publication.venue %}<div><em>{{ publication.venue | escape }}</em></div>{% endif %}
+                </div>
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    {% endif %}
+  </div>
+</section>

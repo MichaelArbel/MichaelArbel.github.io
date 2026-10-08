@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% assign posts = site.pages | where: "blog_post", true | sort: "date" | reverse %}
+<div class="project-index blog-index">
+  {% for post in posts %}
+    <a class="project-card" href="{{ post.url | relative_url }}">
+      {% if post.date %}<div class="funder">{{ post.date | date: "%B %-d, %Y" }}</div>{% endif %}
+      <h2>{{ post.title }}</h2>
+      {% if post.summary %}<p>{{ post.summary }}</p>{% endif %}
+    </a>
+  {% else %}
+    <p class="blog-empty">No blog posts have been published yet.</p>
+  {% endfor %}
+</div>

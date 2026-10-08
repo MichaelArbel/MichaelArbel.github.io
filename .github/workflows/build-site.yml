@@ -1,0 +1,22 @@
+name: Build Jekyll site
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+      - name: Install Jekyll dependencies
+        run: bundle install
+      - name: Build the site
+        run: bundle exec jekyll build --trace

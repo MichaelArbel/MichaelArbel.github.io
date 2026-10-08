@@ -1,0 +1,17 @@
+title: Michael N. Arbel
+description: Research scientist at Inria Grenoble Rhône-Alpes
+url: "https://MichaelArbel.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - scripts
+  - requirements-publications.txt
+  - templates
+  - blog/blog-post-template.md

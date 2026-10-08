@@ -1,0 +1,22 @@
+{% assign now = site.time | date: '%s' %}
+<ol class="bibliography">
+  {% for talk in include.talks %}
+    {% assign talk_time = talk.date | date: '%s' %}
+    {% if include.period == 'upcoming' and talk_time < now %}{% continue %}{% endif %}
+    {% if include.period == 'past' and talk_time >= now %}{% continue %}{% endif %}
+    <li><div class="row">
+      <div class="col-sm-2 abbr"><abbr class="badge">{{ talk.date | date: '%b/%Y' }}</abbr></div>
+      <div class="col-sm-10">
+        <div class="title">{{ talk.title }}</div>
+        {% if talk.event %}<div>{{ talk.event }}</div>{% endif %}
+        {% if talk.location %}<i><div class="description">{{ talk.location }}</div></i>{% endif %}
+        <div class="links">
+          {% if talk.slides %}<a class="btn btn-sm z-depth-0" href="{{ talk.slides | relative_url }}">Slides</a>{% endif %}
+          {% if talk.video %}<a class="btn btn-sm z-depth-0" href="{{ talk.video }}" target="_blank" rel="noopener noreferrer">Video</a>{% endif %}
+          {% if talk.paper %}<a class="btn btn-sm z-depth-0" href="{{ talk.paper }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
+          {% if talk.event_url %}<a class="btn btn-sm z-depth-0" href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer">Event</a>{% endif %}
+        </div>
+      </div>
+    </div></li>
+  {% endfor %}
+</ol>

@@ -987,36 +987,28 @@ function bibtex_js_draw() {
     if ($("#bibtex_input").length) {
         bibstring += $("#bibtex_input").val();
     }
-    // Create request for bibtex files
-    // $('bibtex').each(function(index, value) {
-    //     var request = $.ajax({
-    //             url: $(this).attr('src'),
-    //             dataType: "text"
-    //         })
-    //         .done((data) => bibstring += data)
-    //         .fail((request, status, error) => console.error(error))
-    //     requests.push(request);
-    // });
-
-    $("bibtex").each(function () {
-            var url = $(this).attr("src");
-            if (url) {
-                var proxyUrl = "https://api.allorigins.win/raw?url=" + encodeURIComponent(url); // Use another CORS proxy
-                
-                var request = fetch(proxyUrl)
-                    .then(response => {
-                        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-                        return response.text();
-                    })
-                    .then(data => {
-                        console.log("Fetched BibTeX data:", data);
-                        bibstring += data;
-                    })
-                    .catch(error => console.error("Error fetching BibTeX:", error));
-
-                requests.push(request);
-            }
-        });
+    // The bibliography is hosted by this site, so fetch it directly. A public
+    // CORS proxy cannot reach a visitor's localhost preview and is unnecessary
+    // for a same-origin static file.
+    $("bibtex").each(function() {
+        var url = $(this).attr("src");
+        if (!url) {
+            return;
+        }
+        var request = $.ajax({
+            url: url,
+            dataType: "text"
+        })
+            .done(function(data) {
+                bibstring += data;
+            })
+            .fail(function(request, status, error) {
+                var message = "Unable to load publications (" + status + ").";
+                $("#bibtex_errors").text(message);
+                console.error(message, error);
+            });
+        requests.push(request);
+    });
 
 
 

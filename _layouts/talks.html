@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="publications talks-list">
+  {% assign talks = page.talks | sort: 'date' | reverse %}
+  {% assign now = site.time | date: '%s' %}
+  {% assign has_upcoming = false %}
+  {% for talk in talks %}
+    {% assign talk_time = talk.date | date: '%s' %}
+    {% if talk_time >= now %}
+      {% assign has_upcoming = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% if has_upcoming %}
+    <h2 class="bibliography">Upcoming talks</h2>
+    {% include talk-list.html talks=talks period='upcoming' %}
+  {% endif %}
+
+  <h2 class="bibliography">Past talks</h2>
+  {% include talk-list.html talks=talks period='past' %}
+</div>

@@ -1,0 +1,102 @@
+.theme-toggle { background: none; border: 0; color: var(--global-text-color); cursor: pointer; font-size: 1rem; padding: 0.35rem 0.4rem; }
+.theme-toggle:hover { color: var(--global-theme-color); }
+#navbar .navbar-brand { white-space: nowrap; }
+.home-top { align-items: flex-start; display: flex; gap: 1.5rem; margin-bottom: 2rem; }
+.home-top .home-hero { flex: 1 1 auto; margin-bottom: 0; min-width: 0; }
+.home-top .home-profile { flex: 0 0 min(30%, 255px); margin-left: 0; width: auto; }
+.home-eyebrow { color: var(--global-theme-color); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 0.45rem; text-transform: uppercase; }
+.home-hero h1 { font-size: clamp(2rem, 3vw, 2.1rem); line-height: 1.08; margin-bottom: 0.85rem; }
+.home-statement { font-size: 1.13rem; line-height: 1.55; max-width: 48rem; }
+.home-highlights { display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); list-style: none; margin: 1.4rem 0 0; padding: 0; }
+.home-highlights li { border-left: 3px solid var(--global-theme-color); padding: 0.2rem 0.75rem; }
+.home-highlights a { align-items: center; color: var(--global-text-color); display: flex; gap: 0.65rem; height: 100%; justify-content: space-between; text-decoration: none; }
+.home-highlights a:hover { color: var(--global-theme-color); text-decoration: none; }
+.home-highlights strong, .home-highlight-detail { display: block; }
+.home-highlight-copy { min-width: 0; }
+.home-highlight-detail { color: var(--global-text-color-light); font-size: 0.88rem; margin-top: 0.15rem; }
+.home-highlights .home-highlight-logo-frame { align-items: center; background: #fff; border-radius: 0.3rem; box-sizing: border-box; display: flex; flex: 0 0 5rem; height: 3.75rem; justify-content: center; margin: 0; padding: 0.3rem; }
+.home-highlights .home-highlight-logo { display: block; height: auto; margin: 0; max-height: 100%; max-width: 100%; object-fit: contain; width: auto; }
+.home-highlights .home-highlight-logo-frame-erc-symbol { overflow: hidden; }
+.home-highlights .home-highlight-logo-frame-erc-symbol .home-highlight-logo { height: 100%; max-height: none; max-width: none; object-fit: cover; object-position: center top; width: 100%; }
+.research-directions { clear: both; margin: 2.5rem 0; }
+.research-direction-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+.research-direction { border: 1px solid var(--global-divider-color); border-radius: 0.35rem; padding: 1rem 1.1rem; }
+.research-direction h3 { font-size: 1.08rem; margin: 0 0 0.55rem; }
+.research-direction h3 a { color: var(--global-text-color); }
+.research-direction h3 a:hover { color: var(--global-theme-color); text-decoration: none; }
+.research-direction p { font-size: 0.93rem; margin: 0; }
+.home-copy { clear: both; }
+.home-copy > h2:first-child { margin-top: 0; }
+.content-intro { margin-bottom: 2rem; }
+.opportunities-intro { font-size: 1.08rem; line-height: 1.6; }
+.publication-list .author { margin-top: 0.2rem; }
+.selected-research { margin: 0 0 3rem; }
+.selected-research > p { color: var(--global-text-color-light); margin-bottom: 1.25rem; max-width: 48rem; }
+.selected-research-grid { display: grid; gap: 1rem; grid-auto-rows: 1fr; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.selected-research-item { border: 1px solid var(--global-divider-color); border-top: 4px solid var(--global-theme-color); border-radius: 0.35rem; display: grid; grid-template-rows: 6.5rem 1.75rem minmax(6.25rem, 1fr) 3rem; min-height: 20rem; padding: 1.1rem 1.15rem; }
+.selected-research-title { font-size: 1.07rem; line-height: 1.35; margin: 0; }
+.selected-research-venue { color: var(--global-theme-color); font-size: 0.82rem !important; font-weight: 700; letter-spacing: 0.03em; margin: 0; text-transform: uppercase; }
+.selected-research-summary { font-size: 0.93rem; margin: 0; }
+.selected-research-links { align-self: end; margin: 0; }
+.publication-section { margin: 3rem 0; }
+.publication-section > h2 { border-bottom: 1px solid var(--global-divider-color); font-size: 1.45rem; padding-bottom: 0.45rem; }
+.publication-date-note { color: var(--global-text-color-light); font-size: 0.9rem; margin-top: 1.5rem; }
+.news-funder-logo { display: inline-block; height: 1.35rem; margin-right: 0.45rem; max-width: 2rem; object-fit: contain; vertical-align: -0.28rem; }
+.news-funder-logo-erc { background: #fff; border-radius: 0.15rem; box-sizing: border-box; height: 1.6rem; max-width: none; object-fit: cover; object-position: center top; padding: 0.04rem; width: 2.25rem; }
+.news-funder-logo-anr { max-width: 3.25rem; }
+.project-index { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-top: 1.5rem; }
+.project-card { border: 1px solid var(--global-divider-color); border-top: 4px solid var(--global-theme-color); border-radius: 0.35rem; color: var(--global-text-color); display: block; padding: 1.35rem; text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.project-card:hover { box-shadow: 0 0.35rem 1.2rem rgba(0, 0, 0, 0.12); text-decoration: none; transform: translateY(-2px); }
+.project-card h2 { color: var(--global-text-color); font-size: 1.35rem; margin: 0.2rem 0 0.65rem; }
+.project-card .funder { color: var(--global-theme-color); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.blog-empty { color: var(--global-text-color-light); margin: 1.25rem 0; }
+.project-page { max-width: 760px; margin: 0 auto; }
+.project-heading { border-bottom: 1px solid var(--global-divider-color); margin-bottom: 0; padding: 0.5rem 0 1.2rem; }
+.project-heading.has-funder-logo { align-items: center; display: flex; gap: 1.5rem; justify-content: space-between; }
+.project-heading-details { min-width: 0; }
+.project-funder-logo { flex: 0 0 auto; line-height: 0; }
+.project-funder-logo img { display: block; height: auto; max-width: 180px; width: min(180px, 30vw); }
+.project-funder-logo-erc { border-radius: 0.35rem; padding: 0.5rem 0.55rem 0.7rem; }
+html[data-theme='dark'] .project-funder-logo-erc { background: #fff; }
+.project-heading.compact { padding-bottom: 0.75rem; }
+.project-heading h1 { font-size: 2.35rem; margin: 0.2rem 0; }
+.project-funder, .project-acronym, .project-dates { color: var(--global-text-color-light); margin: 0.25rem 0; }
+.project-funder { color: var(--global-theme-color); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; }
+.project-acronym { font-family: monospace; font-size: 1.05rem; }
+.project-nav { border-bottom: 1px solid var(--global-divider-color); display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; margin-bottom: 2rem; padding: 0.7rem 0; }
+.project-nav a { border-bottom: 2px solid transparent; padding: 0.25rem 0; text-decoration: none; }
+.project-nav a.active { border-bottom-color: var(--global-theme-color); font-weight: 700; }
+.project-copy h2 { margin-top: 1.8rem; }
+.project-copy h3 { font-size: 1.25rem; margin-top: 1.4rem; }
+.funding-acknowledgement { font-weight: 500; }
+.team-section { margin-top: 3.25rem; }
+.team-table { width: 100%; }
+.team-table td { padding-bottom: 1rem; padding-top: 0.5rem; vertical-align: top; }
+.team-table th:first-child, .team-table td:first-child { min-width: 10rem; padding-right: 2rem; width: 11rem; }
+.team-table th:nth-child(2), .team-table td:nth-child(2) { padding-left: 1rem; }
+.placeholder { border-left: 3px solid var(--global-theme-color); color: var(--global-text-color-light); margin: 1.5rem 0; padding: 0.8rem 1rem; }
+#navbar .navbar-collapse { padding-top: 0.4rem; }
+#navbar .navbar-nav .nav-link { padding-bottom: 0.4rem; padding-top: 0.4rem; }
+#navbar .navbar-nav .nav-subitem .nav-link { color: var(--global-text-color-light); font-size: 0.9rem; padding-right: 1rem; }
+.skip-link { background: var(--global-bg-color); color: var(--global-text-color); left: 0.75rem; padding: 0.6rem 0.85rem; position: fixed; top: -4rem; z-index: 1100; }
+.skip-link:focus { top: 0.75rem; }
+#site-sidebar { display: none; }
+@media (min-width: 1200px) and (hover: hover) and (pointer: fine) {
+  body.fixed-top-nav { padding-left: 15rem; padding-top: 0; }
+  #navbar { display: none; }
+  #site-sidebar { background-color: var(--global-bg-color); border-right: 1px solid var(--global-divider-color); bottom: 0; display: flex; flex-direction: column; left: 0; overflow-y: auto; position: fixed; top: 0; width: 15rem; z-index: 1030; }
+  .site-sidebar-content { display: flex; flex: 1 1 auto; flex-direction: column; min-width: 15rem; padding: 1.5rem 1.25rem; }
+  .sidebar-brand { color: var(--global-text-color); display: block; font-size: 1.15rem; margin-bottom: 2rem; text-decoration: none; }
+  .sidebar-brand:hover { color: var(--global-theme-color); text-decoration: none; }
+  .sidebar-nav { display: flex; flex-direction: column; list-style: none; margin: 0; min-height: 100%; padding: 0; }
+  .sidebar-nav-item { margin: 0; }
+  .sidebar-nav-link { color: var(--global-text-color); display: block; padding: 0.52rem 0; text-decoration: none; }
+  .sidebar-nav-link:hover { color: var(--global-theme-color); text-decoration: none; }
+  .sidebar-nav-item.active > .sidebar-nav-link { color: var(--global-theme-color); font-weight: 700; }
+  .sidebar-nav-subitem .sidebar-nav-link { color: var(--global-text-color-light); font-size: 0.9rem; padding-left: 1rem; }
+  .sidebar-nav-subitem.active > .sidebar-nav-link { color: var(--global-theme-color); }
+  .sidebar-theme-item { border-top: 1px solid var(--global-divider-color); margin-top: 1.25rem; padding-top: 0.8rem; }
+  .sidebar-theme-item .theme-toggle { padding: 0.25rem 0; }
+  footer.fixed-bottom { left: 15rem; right: 0; width: auto; }
+}
+@media (max-width: 575px) { .navbar-nav { flex-wrap: wrap !important; } .project-heading h1 { font-size: 1.8rem; } .project-heading.has-funder-logo { gap: 1rem; } .project-funder-logo img { width: min(145px, 34vw); } .home-top { flex-direction: column; gap: 1.5rem; } .home-top .home-hero { order: 1; } .home-top .home-profile { align-self: center; max-width: 18rem; order: 2; width: 100%; } .home-hero h1 { font-size: 2rem; } .home-highlights { grid-template-columns: 1fr; } .team-table th:first-child, .team-table td:first-child { min-width: 7.5rem; padding-right: 1rem; width: 8.25rem; } .team-table th:nth-child(2), .team-table td:nth-child(2) { padding-left: 0.5rem; } }

@@ -107,14 +107,24 @@ Why Jekyll? Read [Andrej Karpathy's blog post](https://karpathy.github.io/2014/0
 
 #### Local setup
 
-Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (*hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)*), first [fork](https://guides.github.com/activities/forking/) the theme from `github.com:alshedivat/al-folio` to `github.com:<your-username>/<your-repo-name>` and do the following:
+This website requires Ruby 3.0 or newer. The macOS system Ruby (currently
+2.6) is too old, so use the Homebrew Ruby instead. Install it once if needed:
 
 ```bash
-$ git clone git@github.com:<your-username>/<your-repo-name>.git
-$ cd <your-repo-name>
-$ bundle install
-$ bundle exec jekyll serve
+brew install ruby
 ```
+
+From the repository root, select that Ruby and start the local preview:
+
+```bash
+export PATH="$(brew --prefix ruby)/bin:$PATH"
+ruby --version
+BUNDLE_PATH=vendor/bundle bundle install
+BUNDLE_PATH=vendor/bundle bundle exec jekyll serve --livereload
+```
+
+The reported Ruby version must be 3.0 or newer. Open
+http://127.0.0.1:4000 to view the site; stop the server with `Ctrl-C`.
 
 Now, feel free to customize the theme however you like (don't forget to change the name!).
 After you are done, **commit** your final changes.

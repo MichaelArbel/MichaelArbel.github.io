@@ -1,0 +1,74 @@
+---
+layout: default
+---
+{% assign cv_url = page.profile.cv_url | relative_url %}
+<div class="home-top">
+  <div class="home-hero">
+    <p class="home-eyebrow">Machine learning · optimization · scientific inference</p>
+    <h1>{{ page.research_title | default: 'Research' }}</h1>
+    {% if page.research_statement %}<p class="home-statement">{{ page.research_statement }}</p>{% endif %}
+    {% if page.highlights %}
+      <ul class="home-highlights" aria-label="Research highlights">
+        {% for highlight in page.highlights %}
+          <li>
+            {% if highlight.url %}<a href="{{ highlight.url }}"{% if highlight.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{% endif %}
+              <span class="home-highlight-copy"><strong>{{ highlight.title }}</strong>{% if highlight.detail %}<span class="home-highlight-detail">{{ highlight.detail }}</span>{% endif %}</span>
+              {% if highlight.logo %}<span class="home-highlight-logo-frame{% if highlight.logo_variant %} home-highlight-logo-frame-{{ highlight.logo_variant }}{% endif %}"><img class="home-highlight-logo" src="{{ highlight.logo | relative_url }}" alt="{{ highlight.logo_alt | default: highlight.title | escape }}"></span>{% endif %}
+            {% if highlight.url %}</a>{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+
+  <div class="profile home-profile">
+    <a href="{{ cv_url }}?v={{ site.time | date: '%s' }}">
+      <div class="card hoverable"><img class="img-fluid z-depth-1 rounded" src="{{ page.profile.photo | relative_url }}" srcset="{{ page.profile.photo_small | relative_url }} 480w, {{ page.profile.photo_large | relative_url }} 500w" alt="{{ page.profile.photo_alt | escape }}"></div>
+    </a>
+    <div class="address"><center><a href="{{ cv_url }}?v={{ site.time | date: '%s' }}">{{ page.profile.cv_label }}</a></center></div>
+    <div class="social" style="margin-top:0.5rem;"><div class="small-contact-icons">
+      {% for link in page.social_links %}
+        <a href="{{ link.url }}" title="{{ link.label }}" aria-label="{{ link.label }}"{% if link.external %} target="_blank" rel="noopener noreferrer"{% endif %}><i class="{{ link.icon }}"></i></a>
+      {% endfor %}
+    </div></div>
+    <div class="address" style="margin-top:0.5rem;"><center>{% for line in page.profile.address %}<p>{{ line }}</p>{% endfor %}</center></div>
+  </div>
+</div>
+
+{% if page.research_directions %}
+  <section class="research-directions" aria-labelledby="research-directions-title">
+    <h2 id="research-directions-title">Research directions</h2>
+    <div class="research-direction-grid">
+      {% for direction in page.research_directions %}
+        <article class="research-direction">
+          <h3>{% if direction.url %}<a href="{{ direction.url }}"{% if direction.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{% endif %}{{ direction.title }}{% if direction.url %}</a>{% endif %}</h3>
+          <p>{{ direction.description }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+<div class="clearfix home-copy">
+  {% assign biography = content | replace: '<a href=', '<a target="_blank" rel="noopener noreferrer" href=' %}
+  {{ biography }}
+</div>
+
+{% assign news_source = site.pages | where: "url", "/news-data/" | first %}
+{% if news_source and news_source.items and news_source.items.size > 0 %}
+  <div class="news">
+    <h2>News</h2>
+    <div class="table-responsive"><table class="table table-sm table-borderless">
+      {% for item in news_source.items %}
+        {% assign item_content = item.content | markdownify | remove: '<p>' | remove: '</p>' | replace: '<a href=', '<a target="_blank" rel="noopener noreferrer" href=' %}
+        <tr><th scope="row">{{ item.date | date: '%B %Y' }}</th><td>{% if item.funder == 'erc' %}<img class="news-funder-logo news-funder-logo-erc" src="{{ '/assets/img/ERC-logo.png' | relative_url }}" alt="European Research Council">{% elsif item.funder == 'anr' %}<img class="news-funder-logo news-funder-logo-anr" src="{{ '/assets/img/ANR-logo-2021-sigle.jpg' | relative_url }}" alt="Agence nationale de la recherche">{% endif %}{{ item_content }}</td></tr>
+      {% endfor %}
+    </table></div>
+  </div>
+{% endif %}
+
+<div class="social"><div class="contact-icons">
+  {% for link in page.social_links %}
+    {% if link.footer %}<a href="{{ link.url }}" title="{{ link.label }}" aria-label="{{ link.label }}"{% if link.external %} target="_blank" rel="noopener noreferrer"{% endif %}><i class="{{ link.icon }}"></i></a>{% endif %}
+  {% endfor %}
+</div><div class="contact-note">{{ page.contact_note }}</div></div>

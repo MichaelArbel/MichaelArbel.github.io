@@ -1,0 +1,7 @@
+{% assign root = '/projects/' | append: include.project | append: '/' %}
+<nav class="project-nav" aria-label="Project navigation">
+  <a{% if include.active == 'overview' %} class="active"{% endif %} href="{{ root | relative_url }}">Overview</a>
+  <a{% if include.active == 'publications' %} class="active"{% endif %} href="{{ root | append: 'publications/' | relative_url }}">Publications</a>
+  <a{% if include.active == 'software' %} class="active"{% endif %} href="{{ root | append: 'software/' | relative_url }}">Software</a>
+  <a{% if include.active == 'jobs' %} class="active"{% endif %} href="{{ root | append: 'jobs/' | relative_url }}">Job offers</a>
+</nav>

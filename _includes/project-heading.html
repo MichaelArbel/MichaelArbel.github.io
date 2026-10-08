@@ -1,0 +1,22 @@
+{% assign overview_url = '/projects/' | append: include.project | append: '/' %}
+{% assign overview = site.pages | where: 'url', overview_url | first %}
+{% assign heading_funder = overview.funder | default: page.funder | default: 'Research project' %}
+{% assign heading_name = overview.project_name | default: page.project_name %}
+{% assign heading_acronym = overview.acronym | default: page.acronym %}
+{% assign heading_dates = overview.dates | default: page.dates %}
+{% assign heading_logo_url = overview.funder_logo_url | default: page.funder_logo_url %}
+{% assign heading_logo_href = overview.funder_logo_href | default: page.funder_logo_href | default: heading_logo_url %}
+{% assign heading_logo_alt = overview.funder_logo_alt | default: page.funder_logo_alt | default: heading_funder %}
+<div class="project-heading{% if heading_logo_url %} has-funder-logo{% endif %}">
+  <div class="project-heading-details">
+    <p class="project-funder">{{ heading_funder }}</p>
+    <h1>{{ heading_name }}</h1>
+    {% if heading_acronym %}<p class="project-acronym">{{ heading_acronym }}</p>{% endif %}
+    {% if heading_dates %}<p class="project-dates">{{ heading_dates }}</p>{% endif %}
+  </div>
+  {% if heading_logo_url %}
+    <a class="project-funder-logo project-funder-logo-{{ include.project }}" href="{{ heading_logo_href }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ heading_logo_url }}" alt="{{ heading_logo_alt | escape }}">
+    </a>
+  {% endif %}
+</div>

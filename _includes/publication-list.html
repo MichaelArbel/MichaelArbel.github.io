@@ -1,0 +1,18 @@
+<ol class="bibliography publication-list">
+  {% for publication in include.publications %}
+    <li>
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">{{ publication.year }}</abbr></div>
+        <div class="col-sm-10">
+          <div class="title">{% if publication.url != empty %}<a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.title | escape }}</a>{% else %}{{ publication.title | escape }}{% endif %}</div>
+          {% if publication.author %}
+            {% assign authors = publication.author | escape %}
+            {% assign authors = authors | replace: 'Michael Arbel', '<strong>Michael Arbel</strong>' | replace: 'Arbel, Michael', '<strong>Arbel, Michael</strong>' %}
+            <div class="author">{{ authors }}</div>
+          {% endif %}
+          {% if publication.venue %}<div><em>{{ publication.venue | escape }}</em></div>{% endif %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ol>

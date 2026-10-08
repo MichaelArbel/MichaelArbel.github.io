@@ -1,123 +1,22 @@
+---
+layout: null
+---
+{%- assign pages = site.pages | sort: "url" -%}
+{%- assign blog_posts = site.pages | where: "blog_post", true -%}
+{%- assign excluded_urls = "/404.html|/feed.xml|/news-data/|/sitemap.xml" | split: "|" -%}
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://michaelarbel.github.io/activities/activity_3/</loc>
-<lastmod>2017-09-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/activities/activity_4/</loc>
-<lastmod>2017-09-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/activities/activity_2/</loc>
-<lastmod>2017-11-01T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/activities/activity_1/</loc>
-<lastmod>2021-09-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_1/</loc>
-<lastmod>2017-09-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_2/</loc>
-<lastmod>2017-09-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_3/</loc>
-<lastmod>2018-02-01T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_4/</loc>
-<lastmod>2018-03-01T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_5/</loc>
-<lastmod>2018-04-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_6/</loc>
-<lastmod>2018-06-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_7/</loc>
-<lastmod>2018-06-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_8/</loc>
-<lastmod>2018-07-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_9/</loc>
-<lastmod>2018-10-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_10/</loc>
-<lastmod>2018-12-01T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_11/</loc>
-<lastmod>2019-07-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_12/</loc>
-<lastmod>2019-12-01T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_13/</loc>
-<lastmod>2020-04-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_14/</loc>
-<lastmod>2020-04-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_20/</loc>
-<lastmod>2021-03-01T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_15/</loc>
-<lastmod>2021-03-18T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_16/</loc>
-<lastmod>2021-04-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_19/</loc>
-<lastmod>2021-04-01T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_17/</loc>
-<lastmod>2021-07-18T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/announcement_18/</loc>
-<lastmod>2021-08-11T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/</loc>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/_pages/dropdown/</loc>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/news/</loc>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/projects/</loc>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/publications/</loc>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/software/</loc>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/talks/</loc>
-</url>
-<url>
-<loc>https://michaelarbel.github.io/teaching/</loc>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for page in pages %}
+  {% assign is_empty_blog_index = false %}
+  {% if page.url == "/blog/" and blog_posts.size == 0 %}{% assign is_empty_blog_index = true %}{% endif %}
+  {% unless excluded_urls contains page.url or is_empty_blog_index %}
+    {% unless page.url contains "/_pages/" %}
+      {% if page.output != false and page.sitemap != false %}
+  <url>
+    <loc>{{ page.url | absolute_url | xml_escape }}</loc>
+  </url>
+      {% endif %}
+    {% endunless %}
+  {% endunless %}
+{% endfor %}
 </urlset>

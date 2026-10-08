@@ -1,0 +1,432 @@
+[
+  {
+    "title": "Flow Matching Calibration for Simulation-Based Inference under Model Misspecification",
+    "author": "Pierre-Louis Ruhlmann and Michael Arbel and Florence Forbes and Pedro L. C. Rodrigues",
+    "venue": "ICML 2026",
+    "year": "2026",
+    "month": "7",
+    "url": "https://proceedings.mlr.press/v306/ruhlmann26a.html",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Functional Bilevel Optimization for Predictive Fairness",
+    "author": "Ieva Petrulionyte and Julien Mairal and Michael Arbel",
+    "venue": "arXiv preprint arXiv:2607.05098",
+    "year": "2026",
+    "month": "7",
+    "url": "https://arxiv.org/abs/2607.05098",
+    "type": "article",
+    "category": "preprint"
+  },
+  {
+    "title": "Dual Perspectives on Non-Contrastive Self-Supervised Learning",
+    "author": "Jean Ponce and Basile Terver and Martial Hebert and Michael Arbel",
+    "venue": "ICLR 2026",
+    "year": "2026",
+    "month": "6",
+    "url": "https://arxiv.org/abs/2507.01028",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Beyond MMSE: Enhancing PnP Restoration with ProxiMAP",
+    "author": "Kenta Vert and Giacomo Meanti and Scott Pesme and Michael Arbel and Julien Mairal",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2026",
+    "year": "2026",
+    "month": "5",
+    "url": "https://arxiv.org/abs/2605.16396",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "BlockFormer : Transformer-based inference from genomic contact maps",
+    "author": "Eloïse Touron and Pedro L. C. Rodrigues and Julyan Arbel and Nelle Varoquaux and Michael Arbel",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2026",
+    "year": "2026",
+    "month": "5",
+    "url": "https://arxiv.org/abs/2605.21617",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "PEIRA: Learning Predictive Encoders through Inter-View Regressor Alignment",
+    "author": "Michael Arbel and Basile Terver and Jean Ponce",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2026",
+    "year": "2026",
+    "month": "5",
+    "url": "https://arxiv.org/abs/2605.17671",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Semiparametric Efficient Bilevel Gradient Estimation",
+    "author": "El Khoury, Fares and Zenati, Houssam and Kallus, Nathan and Arbel, Michael and Bibaut, Aurélien",
+    "venue": "arXiv preprint arXiv:2605.21341",
+    "year": "2026",
+    "month": "5",
+    "url": "https://arxiv.org/abs/2605.21341",
+    "type": "article",
+    "category": "preprint"
+  },
+  {
+    "title": "Non-Stationary Functional Bilevel Optimization",
+    "author": "Jason Bohne and Ieva Petrulionyte and Michael Arbel and Julien Mairal and Paweł Polak",
+    "venue": "AISTATS 2026",
+    "year": "2026",
+    "month": "1",
+    "url": "https://arxiv.org/abs/2601.15363",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Simulation-based inference of yeast centromeres",
+    "author": "Eloïse Touron and Pedro L. C. Rodrigues and Julyan Arbel and Nelle Varoquaux and Michael Arbel",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2025, 3rd Workshop on Imageomic",
+    "year": "2025",
+    "month": "8",
+    "url": "https://arxiv.org/abs/2509.00200",
+    "type": "inproceedings",
+    "category": "other"
+  },
+  {
+    "title": "Unsupervised Imaging Inverse Problems with Diffusion Distribution Matching",
+    "author": "Giacomo Meanti and Thomas Ryckeboer and Michael Arbel and Julien Mairal",
+    "venue": "ICCV 2025",
+    "year": "2025",
+    "month": "6",
+    "url": "https://arxiv.org/abs/2506.14605",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "EquiTabPFN: A Target-Permutation Equivariant Prior Fitted Network",
+    "author": "Arbel, Michael and Salinas, David and Hutter, Frank",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2025",
+    "year": "2025",
+    "month": "",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/5a66c7adffdbde9dd5e78820cbf6935c-Abstract-Conference.html",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Learning Theory for Kernel Bilevel Optimization",
+    "author": "El Khoury, Fares and Pauwels, Edouard and Vaiter, Samuel and Arbel, Michael",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2025",
+    "year": "2025",
+    "month": "",
+    "url": "https://arxiv.org/abs/2502.08457",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "LUDVIG: Learning-Free Uplifting of 2D Visual Features to Gaussian Splatting Scenes",
+    "author": "Marrie, Juliette and Ménégaux, Romain and Arbel, Michael and Larlus, Diane and Mairal, Julien",
+    "venue": "IEEE/CVF International Conference on Computer Vision (ICCV) 2025",
+    "year": "2025",
+    "month": "",
+    "url": "https://www.openaccess.thecvf.com/content/ICCV2025/papers/Marrie_LUDVIG_Learning-Free_Uplifting_of_2D_Visual_Features_to_Gaussian_Splatting_ICCV_2025_paper.pdf",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "MAP Estimation with Denoisers: Convergence Rates and Guarantees",
+    "author": "Scott Pesme and Giacomo Meanti and Michael Arbel and Julien Mairal",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2025",
+    "year": "2025",
+    "month": "",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/6083615233ff4f9f940d9a3b7c20bb8e-Abstract-Conference.html",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Data augmentation for training neural networks",
+    "author": "Marrie, Juliette and Arbel, Michael and Mairal, Julien and Larlus, Diane",
+    "venue": "US Patent Application 18/634,466",
+    "year": "2024",
+    "month": "11",
+    "url": "",
+    "type": "misc",
+    "category": "other"
+  },
+  {
+    "title": "Functional Bilevel Optimization for Machine Learning",
+    "author": "Petrulionyte, Ieva and Mairal, Julien and Arbel, Michael",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2024",
+    "year": "2024",
+    "month": "",
+    "url": "https://arxiv.org/abs/2403.20233",
+    "type": "article",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "MLXP: A framework for conducting replicable experiments in Python",
+    "author": "Arbel, Michael and Zouaoui, Alexander",
+    "venue": "Proceedings of the 2nd ACM Conference on Reproducibility and Replicability",
+    "year": "2024",
+    "month": "",
+    "url": "https://arxiv.org/abs/2402.13831",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "On Good Practices for Task-Specific Distillation of Large Pretrained Visual Models",
+    "author": "Marrie, Juliette and Arbel, Michael and Mairal, Julien and Larlus, Diane",
+    "venue": "Transactions on Machine Learning Research Journal",
+    "year": "2024",
+    "month": "",
+    "url": "https://arxiv.org/abs/2402.11305",
+    "type": "article",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Improving Deep Ensembles without Communication",
+    "author": "Pitas, Konstantinos and Arbel, Michael and Arbel, Julyan",
+    "venue": "Workshop on Advancing Neural Network Training (WANT@ NeurIPS 2023)",
+    "year": "2023",
+    "month": "",
+    "url": "",
+    "type": "inproceedings",
+    "category": "other"
+  },
+  {
+    "title": "Rethinking Gauss-Newton for learning over-parameterized models",
+    "author": "Arbel, Michael and Menegaux, Romain and Wolinski, Pierre",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2023",
+    "year": "2023",
+    "month": "",
+    "url": "https://arxiv.org/abs/2302.02904",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "SLACK: Stable Learning of Augmentations with Cold-start and KL regularization",
+    "author": "Marrie, Juliette and Arbel, Michael and Larlus, Diane and Mairal, Julien",
+    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "year": "2023",
+    "month": "",
+    "url": "https://arxiv.org/abs/2306.09998",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Amortized implicit differentiation for stochastic bilevel optimization",
+    "author": "Arbel, Michael and Mairal, Julien",
+    "venue": "International Conference on Learning Representations (ICLR) 2022",
+    "year": "2022",
+    "month": "",
+    "url": "https://arxiv.org/abs/2111.14580",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Continual repeated annealed flow transport Monte Carlo",
+    "author": "Matthews, Alex and Arbel, Michael and Rezende, Danilo Jimenez and Doucet, Arnaud",
+    "venue": "International Conference on Machine Learning",
+    "year": "2022",
+    "month": "",
+    "url": "https://arxiv.org/abs/2201.13117",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Fair synthetic data does not necessarily lead to fair models",
+    "author": "Eitan, Yam and Cavaglione, Nathan and Arbel, Michael and Cohen, Samuel",
+    "venue": "NeurIPS 2022 Workshop on Synthetic Data for Empowering ML Research",
+    "year": "2022",
+    "month": "",
+    "url": "",
+    "type": "inproceedings",
+    "category": "other"
+  },
+  {
+    "title": "Maximum Likelihood Learning of Unnormalized Models for Simulation-Based Inference",
+    "author": "Glaser, Pierre and Arbel, Michael and Hromadka, Samo and Doucet, Arnaud and Gretton, Arthur",
+    "venue": "arXiv preprint arXiv:2210.14756",
+    "year": "2022",
+    "month": "",
+    "url": "https://arxiv.org/abs/2210.14756",
+    "type": "article",
+    "category": "preprint"
+  },
+  {
+    "title": "Non-Convex Bilevel Games with Critical Point Selection Maps",
+    "author": "Arbel, Michael and Mairal, Julien",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2022",
+    "year": "2022",
+    "month": "",
+    "url": "https://arxiv.org/abs/2207.04888",
+    "type": "article",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Towards an Understanding of Default Policies in Multitask Policy Optimization",
+    "author": "Moskovitz, Ted and Arbel, Michael and Parker-Holder, Jack and Pacchiano, Aldo",
+    "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS) 2022",
+    "year": "2022",
+    "month": "",
+    "url": "https://arxiv.org/abs/2111.02994",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Annealed Flow Transport Monte Carlo",
+    "author": "Arbel, Michael and Matthews, Alexander GDG and Doucet, Arnaud",
+    "venue": "International Conference on Machine Learning (ICML) 2021",
+    "year": "2021",
+    "month": "",
+    "url": "https://arxiv.org/abs/2102.07501",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Efficient wasserstein natural gradients for reinforcement learning",
+    "author": "Moskovitz, Ted and Arbel, Michael and Huszar, Ferenc and Gretton, Arthur",
+    "venue": "International Conference on Learning Representations (ICLR) 2021",
+    "year": "2021",
+    "month": "",
+    "url": "https://arxiv.org/abs/2010.05380",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Generalized Energy Based Models",
+    "author": "Arbel, Michael and Zhou, Liang and Gretton, Arthur",
+    "venue": "International Conference on Learning Representations (ICLR) 2021",
+    "year": "2021",
+    "month": "",
+    "url": "https://arxiv.org/abs/2003.05033",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "KALE Flow: A Relaxed KL Gradient Flow for Probabilities with Disjoint Support",
+    "author": "Glaser, Pierre and Arbel, Michael and Gretton, Arthur",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2021",
+    "year": "2021",
+    "month": "",
+    "url": "https://arxiv.org/abs/2106.08929",
+    "type": "article",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Methods for optimization and regularization of Generative Models",
+    "author": "Arbel, Michael",
+    "venue": "UCL (University College London)",
+    "year": "2021",
+    "month": "",
+    "url": "",
+    "type": "phdthesis",
+    "category": "other"
+  },
+  {
+    "title": "Tactical Optimism and Pessimism for Deep Reinforcement Learning",
+    "author": "Moskovitz, Ted and Parker-Holder, Jack and Pacchiano, Aldo and Arbel, Michael and Jordan, Michael I.",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2021",
+    "year": "2021",
+    "month": "",
+    "url": "https://arxiv.org/abs/2102.03765",
+    "type": "article",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "The Unreasonable Effectiveness of Patches in Deep Convolutional Kernels Methods",
+    "author": "Thiry, Louis and Arbel, Michael and Belilovsky, Eugene and Oyallon, Edouard",
+    "venue": "International Conference on Learning Representations (ICLR) 2021",
+    "year": "2021",
+    "month": "",
+    "url": "https://arxiv.org/abs/2101.07528",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "A non-asymptotic analysis for Stein variational gradient descent",
+    "author": "Korba, Anna and Salim, Adil and Arbel, Michael and Luise, Giulia and Gretton, Arthur",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2020",
+    "year": "2020",
+    "month": "",
+    "url": "https://arxiv.org/abs/2006.09797",
+    "type": "article",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Estimating barycenters of measures in high dimensions",
+    "author": "Cohen, Samuel and Arbel, Michael and Deisenroth, Marc Peter",
+    "venue": "arXiv preprint arXiv:2007.07105",
+    "year": "2020",
+    "month": "",
+    "url": "https://arxiv.org/abs/2007.07105",
+    "type": "article",
+    "category": "preprint"
+  },
+  {
+    "title": "Kernelized Wasserstein Natural Gradient",
+    "author": "Arbel, Michael and Gretton, Arthur and Li, Wuchen and Montúfar, Guido",
+    "venue": "International Conference on Learning Representations (ICLR) 2020",
+    "year": "2020",
+    "month": "",
+    "url": "https://arxiv.org/abs/1910.09652",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Synchronizing probability measures on rotations via optimal transport",
+    "author": "Birdal, Tolga and Arbel, Michael and Simsekli, Umut and Guibas, Leonidas J",
+    "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020",
+    "year": "2020",
+    "month": "",
+    "url": "https://arxiv.org/abs/2004.00663",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Maximum mean discrepancy gradient flow",
+    "author": "Arbel, Michael and Korba, Anna and Salim, Adil and Gretton, Arthur",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2019",
+    "year": "2019",
+    "month": "",
+    "url": "https://arxiv.org/abs/1906.04370",
+    "type": "article",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Demystifying mmd gans",
+    "author": "Bińkowski, Mikołaj and Sutherland, Dougal J and Arbel, Michael and Gretton, Arthur",
+    "venue": "International Conference on Learning Representations (ICLR) 2018",
+    "year": "2018",
+    "month": "",
+    "url": "https://arxiv.org/abs/1801.01401",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Efficient and principled score estimation with Nyström kernel exponential families",
+    "author": "Sutherland, Dougal J and Strathmann, Heiko and Arbel, Michael and Gretton, Arthur",
+    "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS) 2018",
+    "year": "2018",
+    "month": "",
+    "url": "https://arxiv.org/abs/1705.08360",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "Kernel conditional exponential family",
+    "author": "Arbel, Michael and Gretton, Arthur",
+    "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS) 2018",
+    "year": "2018",
+    "month": "",
+    "url": "https://arxiv.org/abs/1711.05363",
+    "type": "inproceedings",
+    "category": "peer_reviewed"
+  },
+  {
+    "title": "On gradient regularizers for MMD GANs",
+    "author": "Arbel, Michael and Sutherland, Danica J and Bińkowski, Mikołaj and Gretton, Arthur",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS) 2018",
+    "year": "2018",
+    "month": "",
+    "url": "https://arxiv.org/abs/1805.11565",
+    "type": "article",
+    "category": "peer_reviewed"
+  }
+]

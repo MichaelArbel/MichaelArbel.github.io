@@ -1,0 +1,10 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+.DS_Store
+cv/.texpadtmp/
+cv/.build/
+__pycache__/
+*.py[cod]

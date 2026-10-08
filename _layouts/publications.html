@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<div class="publications">
+  {% if site.data.publications and site.data.publications.size > 0 %}
+    {% if page.featured_work and page.featured_work.size > 0 %}
+      <section class="selected-research" aria-labelledby="selected-research-heading">
+        <h2 id="selected-research-heading">Selected contributions</h2>
+        <p>A short entry point to recent work across representation learning, bilevel optimization, and reliable machine learning. The complete bibliography follows below.</p>
+        <div class="selected-research-grid">
+          {% for work in page.featured_work %}
+            <article class="selected-research-item">
+              <h3 class="selected-research-title">{{ work.title | escape }}</h3>
+              <p class="selected-research-venue">{% if work.venue %}{{ work.venue | escape }}{% endif %}</p>
+              <p class="selected-research-summary">{% if work.summary %}{{ work.summary | escape }}{% endif %}</p>
+              <p class="links selected-research-links">
+                {% if work.paper_url %}<a href="{{ work.paper_url }}" class="btn btn-sm z-depth-0" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
+                {% if work.code_url %}<a href="{{ work.code_url }}" class="btn btn-sm z-depth-0" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
+              </p>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% assign peer_reviewed = site.data.publications | where: "category", "peer_reviewed" %}
+    {% assign preprints = site.data.publications | where: "category", "preprint" %}
+    {% assign other_outputs = site.data.publications | where: "category", "other" %}
+
+    <section class="publication-section" aria-labelledby="peer-reviewed-heading">
+      <h2 id="peer-reviewed-heading">Peer-reviewed publications</h2>
+      {% include publication-list.html publications=peer_reviewed %}
+    </section>
+    {% if preprints.size > 0 %}
+      <section class="publication-section" aria-labelledby="preprints-heading">
+        <h2 id="preprints-heading">Preprints</h2>
+        {% include publication-list.html publications=preprints %}
+      </section>
+    {% endif %}
+    {% if other_outputs.size > 0 %}
+      <section class="publication-section" aria-labelledby="other-outputs-heading">
+        <h2 id="other-outputs-heading">Other research outputs</h2>
+        {% include publication-list.html publications=other_outputs %}
+      </section>
+    {% endif %}
+  {% else %}
+    <p class="placeholder">Publication data has not been generated yet. Run <code>python scripts/update_publications.py --from-bib</code>.</p>
+  {% endif %}
+</div>

@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<section class="project-page">
+  {% include project-heading.html project=page.project_slug %}
+  {% include project-nav.html project=page.project_slug active=page.section %}
+  <div class="project-copy"><h2>{{ page.title }}</h2>{{ content }}</div>
+</section>

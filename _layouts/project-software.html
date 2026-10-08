@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% assign software_source = site.pages | where: "url", "/software/" | first %}
+{% assign matching_entries = 0 %}
+{% if software_source and software_source.software %}
+  {% for category in software_source.software %}
+    {% for entry in category.entries %}
+      {% if entry.projects contains page.software_project %}{% assign matching_entries = matching_entries | plus: 1 %}{% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+{% assign project_content = content | strip %}
+<section class="project-page">
+  {% include project-heading.html project=page.project_slug %}
+  {% include project-nav.html project=page.project_slug active=page.section %}
+  <div class="project-copy publications software-list">
+    <h2>{{ page.title }}</h2>
+    {% if project_content != '' %}{{ content }}{% endif %}
+    {% if matching_entries > 0 %}
+      {% include software-list.html categories=software_source.software project=page.software_project %}
+    {% elsif project_content == '' %}
+      <p class="placeholder">No software associated with this project has been listed yet.</p>
+    {% endif %}
+  </div>
+</section>
