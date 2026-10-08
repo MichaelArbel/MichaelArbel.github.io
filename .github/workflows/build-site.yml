@@ -20,3 +20,5 @@ jobs:
         run: bundle install
       - name: Build the site
         run: bundle exec jekyll build --trace
+      - name: Validate the built site
+        run: python scripts/check_site.py
